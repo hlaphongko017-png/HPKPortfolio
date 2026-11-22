@@ -3,481 +3,629 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hla Phong Ko | ESG &amp; Circular Economy</title>
-<meta name="description" content="Hla Phong Ko — ESG &amp; circular economy consultant. Waste audits, GHG accounting, EPR traceability and strategic partnerships across Southeast Asia.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>Hla Phong Ko | ESG &amp; Circular Economy Consultant</title>
+<meta name="description" content="Hla Phong Ko — ESG and circular economy consultant. EPR, GHG accounting, waste audits, digital MRV and strategic partnerships across Southeast Asia.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600&family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 <style>
-/* VOICE: executive, quiet, premium — a studio portrait on black
-   IDEA: a dark photo studio with one spotlight and a green data wave on the floor
-   PICTURE: the seated portrait, centred and lit, flanked by name and five service lines
-   COLOUR and TYPE: obsidian ground, white ink, emerald accent with glow; Space Grotesk + Inter + JetBrains Mono labels
-   LAYOUT: three-column hero, then calm full-width bands: about, projects, speaking, insights, contact */
-:root{color-scheme:dark;--bg:#050706;--bg2:#08100c;--card:#0c1310;--ink:#f5f7f6;--mute:#9aa8a1;--green:#34d399;--green2:#10b981;--line:#ffffff1a}
+/* VOICE: cinematic, premium, quiet authority — a film title sequence
+   IDEA: a dark studio stage lit by one warm spotlight; every heading is a gold title card
+   PICTURE: the seated portrait on a black stage, right of frame, fading into darkness
+   COLOUR and TYPE: black, champagne ink, antique-gold accent; Bebas Neue titles, Montserrat tracked labels, script signature
+   LAYOUT: full-screen hero, numbered chapters, stacking project cards, gold-lit timeline, bento expertise, gallery, contact */
+:root{color-scheme:dark;--ink:#E8DFD8;--mute:#A8988B;--soft:#C4B5A5;--gold:#D4AF37;--gold2:#C99E5D;--bronze:#8C6D4F;--card:#0E0C0A;--card2:#120F0C}
 *{box-sizing:border-box;min-width:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
-a{color:inherit}
-h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:400;text-wrap:balance;margin:0}
-h2{font-size:clamp(32px,3.8vw,48px);line-height:1.08}
-h3{font-size:22px;line-height:1.25;font-weight:600}
-p{color:var(--mute);max-width:64ch;margin:0 0 14px}
-.wrap{max-width:1320px;margin:0 auto}
-.band{padding:clamp(56px,7vw,110px) max(5vw,18px)}
-.label{color:var(--green);font-weight:600;font-size:14px;margin-bottom:12px}
-.rule{width:84px;height:3px;background:var(--green);border-radius:2px;margin:26px 0}
-:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+html{scroll-padding-top:70px}
+body{margin:0;background:#000;color:var(--ink);font:300 15px/1.8 Montserrat,system-ui,sans-serif;letter-spacing:.01em;overflow-x:clip}
+::selection{background:#cbb59d;color:#000}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto}
+.band{position:relative;overflow:clip;padding:clamp(72px,10vw,130px) max(5vw,20px)}
+.bebas{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400}
+.t1,.t2,.t3{display:block;-webkit-background-clip:text;background-clip:text;color:transparent}
+.t1{background-image:linear-gradient(#fff,#D5CBC0 55%,#605448)}
+.t2{background-image:linear-gradient(#F7E7C4,#C99E5D 55%,#543B1A);filter:drop-shadow(0 8px 25px rgba(201,158,93,.3))}
+.t3{background-image:linear-gradient(#DFBE8A,#9B7640 55%,#342410);filter:drop-shadow(0 10px 30px rgba(155,118,64,.35))}
+h1,h2,h3{margin:0;font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.005em}
+h2{font-size:clamp(46px,7vw,92px);line-height:.86;margin-bottom:clamp(36px,5vw,64px)}
+p{margin:0 0 14px;color:var(--mute)}
+.eyebrow{display:flex;align-items:center;gap:16px;margin-bottom:22px;font:500 11px/1 Montserrat,sans-serif;letter-spacing:.35em;text-transform:uppercase;color:var(--gold)}
+.eyebrow::after{content:"";width:80px;height:1px;background:linear-gradient(90deg,rgba(212,175,55,.8),rgba(140,109,79,.4),transparent)}
+.glow{position:absolute;border-radius:50%;filter:blur(160px);pointer-events:none;z-index:0}
+.band>.wrap{position:relative;z-index:1}
+:focus-visible{outline:1px solid var(--gold);outline-offset:4px}
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;min-height:50px;padding:0 28px;border:1px solid var(--bronze);background:rgba(18,15,12,.8);color:#EAD8C7;font:500 11px/1 Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;box-shadow:0 0 25px rgba(212,175,55,.18);transition:border-color .3s,color .3s,transform .3s,background .3s}
+.btn::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(232,215,197,.4),transparent)}
+.btn:hover{border-color:var(--gold);color:#FFF5EB;transform:scale(1.02)}
+.btn.ghost{border-color:rgba(140,109,79,.4);box-shadow:none;background:transparent;color:#BFA895}
+.btn.ghost:hover{border-color:var(--bronze);color:#EAD8C7}
+.btn.solid:hover{background:var(--gold);color:#000}
+.btn i{font-style:normal;transition:transform .3s}.btn:hover i{transform:translate(2px,-2px)}
+
+/* cursor */
+.cur{position:fixed;left:0;top:0;z-index:200;width:10px;height:10px;border-radius:50%;background:rgba(235,215,195,.95);border:1px solid rgba(212,175,55,.4);pointer-events:none;transform:translate(-100px,-100px);transition:width .25s,height .25s,background .25s,margin .25s;margin:-5px 0 0 -5px;mix-blend-mode:normal}
+.cur.big{width:48px;height:48px;margin:-24px 0 0 -24px;background:rgba(212,175,55,.1)}
+@media(pointer:fine){body.hascur,body.hascur a,body.hascur button{cursor:none}}
 
 /* nav */
-nav{position:sticky;top:0;z-index:10;background:#0b0c0ee8;backdrop-filter:blur(10px)}
-nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px max(4vw,18px)}
-.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:clamp(20px,2vw,28px);font-weight:500;letter-spacing:.01em}
-.brand svg{width:44px;height:30px;flex:none}
-.links{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
-.links a{position:relative;text-decoration:none;font-size:16px;color:#e4e6e2;padding:10px 14px}
-.links a.on::after{content:"";position:absolute;left:14px;right:14px;bottom:2px;height:3px;border-radius:2px;background:var(--green)}
-.links a:hover{color:#fff}
-.links a.pill{border:1.5px solid var(--green);border-radius:999px;padding:9px 22px;margin-left:12px}
-.links a.pill:hover{background:#34d3991f}
-.menu{display:none;background:none;border:1px solid var(--line);color:var(--ink);border-radius:10px;min-height:44px;padding:0 14px;font:600 15px Inter,system-ui,sans-serif;cursor:pointer}
+nav{position:fixed;left:0;right:0;top:0;z-index:100;transition:background .4s,backdrop-filter .4s}
+nav.scrolled{background:rgba(0,0,0,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid rgba(140,109,79,.18)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px max(4vw,20px)}
+.brand{font:600 13px/1 Montserrat,sans-serif;letter-spacing:.35em;color:#EAD8C7;white-space:nowrap}
+.links{display:flex;gap:30px;font:300 11px/1 Montserrat,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:var(--soft)}
+.links a{position:relative;padding:8px 0}
+.links a::after{content:"";position:absolute;left:0;bottom:2px;width:0;height:1px;background:rgba(212,175,55,.6);transition:width .3s}
+.links a:hover,.links a.on{color:#FFF5EB}.links a:hover::after,.links a.on::after{width:100%}
+.talk{border:1px solid rgba(140,109,79,.5);padding:11px 16px;font:300 11px/1 Montserrat,sans-serif;letter-spacing:.24em;color:#EAD8C7;white-space:nowrap;transition:border-color .3s}
+.talk:hover{border-color:var(--gold)}
+.menu{display:none;background:none;border:1px solid rgba(140,109,79,.5);color:#EAD8C7;font:400 11px Montserrat;letter-spacing:.24em;min-height:44px;padding:0 16px}
 
 /* hero */
-.hero{position:relative;overflow:hidden;background:radial-gradient(38% 60% at 50% 40%,#1c1d21 0%,#101114 60%,var(--bg) 100%);min-height:clamp(640px,calc(100vh - 78px),940px);display:flex;align-items:center}
-.hero .wrap{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.8fr) minmax(0,.9fr);align-items:center;gap:clamp(16px,2vw,32px);padding:clamp(24px,3vw,40px) max(4vw,18px)}
-.hero .intro{max-width:520px}
-.hero h1{font-size:clamp(44px,4.5vw,72px);line-height:1.02;letter-spacing:-.01em}
-.role{font-family:"Space Grotesk",system-ui,sans-serif;font-size:clamp(18px,1.55vw,24px);line-height:1.4;margin-top:22px;color:#ecece8}
-.nw{white-space:nowrap}
-.tag{font-family:"Space Grotesk",system-ui,sans-serif;font-style:italic;font-size:clamp(18px,1.55vw,24px);line-height:1.35;color:#ecece8;margin:0}
-.cta{display:flex;flex-wrap:wrap;align-items:center;gap:26px;margin-top:40px}
-.btn{display:inline-flex;align-items:center;gap:12px;min-height:56px;padding:0 28px;border-radius:999px;background:var(--green);color:#10200a;font-weight:600;font-size:17px;text-decoration:none;border:0;cursor:pointer}
-.btn:hover{background:#9bd468}
-.btn svg{width:20px;height:20px}
-.figure{position:absolute;z-index:1;left:50%;bottom:0;top:5%;transform:translateX(-50%);pointer-events:none}
-.figure img{height:100%;width:auto;max-width:none;display:block;
- -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 100%);-webkit-mask-composite:source-in;
- mask-image:linear-gradient(90deg,transparent 0,#000 22%,#000 78%,transparent 100%),linear-gradient(180deg,transparent 0,#000 12%,#000 100%);mask-composite:intersect}
-.gap{min-height:1px}
-.services{list-style:none;margin:0;padding:0;display:grid;gap:clamp(18px,3.2vh,36px)}
-.services li{display:flex;align-items:center;gap:22px;font-size:clamp(16px,1.35vw,20px);line-height:1.4;color:#eeeeea}
-.services svg{flex:none;width:54px;height:44px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-canvas.wave{position:absolute;left:0;right:0;bottom:0;width:100%;height:42%;z-index:1;pointer-events:none}
-.floor{position:absolute;left:0;right:0;bottom:0;height:20%;background:radial-gradient(50% 100% at 50% 100%,#232327,transparent 80%);z-index:0}
+.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:#000}
+.stage{position:absolute;inset:0;display:flex;justify-content:flex-end;align-items:flex-end}
+.stage img{height:100%;width:auto;max-width:none;margin-right:15vw;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%),linear-gradient(0deg,transparent 0,#000 18%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 30%,#000 70%,transparent 100%),linear-gradient(0deg,transparent 0,#000 18%);mask-composite:intersect;transform-origin:70% 60%;animation:drift 22s ease-in-out infinite alternate}
+.stage::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#000 0%,rgba(0,0,0,.85) 30%,transparent 55%)}
+.beam{position:absolute;z-index:1;top:-20%;right:18vw;width:46vw;height:130%;background:radial-gradient(ellipse at 50% 0%,rgba(255,240,215,.16),transparent 60%);transform:rotate(14deg);pointer-events:none;animation:beam 9s ease-in-out infinite alternate}
+.dust{position:absolute;inset:0;z-index:1;pointer-events:none}
+.hcontent{position:relative;z-index:2;height:100%;display:flex;align-items:center;padding:0 max(5vw,20px)}
+.hgrid{width:100%;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:40px}
+.hl{max-width:620px}
+.hero h1{font-size:clamp(64px,9.6vw,128px);line-height:.83;margin-bottom:18px}
+.sub{font:400 11px/1.6 Montserrat,sans-serif;letter-spacing:.28em;text-transform:uppercase;color:#C4B29E;margin-bottom:16px}
+.sub i{font-style:normal;color:var(--bronze);margin:0 8px}
+.lede{font-size:14px;line-height:1.85;color:var(--mute);max-width:470px;margin-bottom:30px}
+.ctas{display:flex;flex-wrap:wrap;gap:16px}
+.quote{position:absolute;right:max(4vw,20px);bottom:16vh;font:500 10px/1.9 Montserrat,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#E0D3C5}
+.quote .qm{display:block;font:24px Georgia,serif;color:var(--gold2);line-height:1;margin-bottom:6px}
+.quote .gl{width:112px;height:1px;margin:12px 0 8px;background:linear-gradient(90deg,var(--gold),rgba(232,215,197,.7),transparent);box-shadow:0 0 8px rgba(212,175,55,.4)}
+.sig{font-family:"Herr Von Muellerhoff",cursive;font-size:42px;line-height:1;color:#D8AB64;letter-spacing:.03em;text-transform:none}
+.scrollcue{position:absolute;z-index:2;left:50%;bottom:26px;transform:translateX(-50%);font:400 9px Montserrat;letter-spacing:.4em;color:var(--bronze);text-align:center}
+.scrollcue::after{content:"";display:block;width:1px;height:38px;margin:10px auto 0;background:linear-gradient(var(--gold),transparent);animation:cue 2s ease-in-out infinite}
+.reveal>*{opacity:0;transform:translateY(18px);filter:blur(6px);animation:up 1.1s cubic-bezier(.16,1,.3,1) forwards}
+.reveal>*:nth-child(2){animation-delay:.16s}.reveal>*:nth-child(3){animation-delay:.32s}.reveal>*:nth-child(4){animation-delay:.48s}.reveal>*:nth-child(5){animation-delay:.64s}
 
 /* about */
-.about{background:var(--bg2);border-top:1px solid var(--line)}
-.split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:start}
-.creds{display:grid;gap:12px}
-.cred{display:flex;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
-.cred svg{flex:none;width:26px;height:26px;stroke:var(--green);fill:none;stroke-width:2;stroke-linecap:round;margin-top:2px}
-.cred b{display:block;font-weight:600}.cred span{font-size:14px;color:var(--mute)}
+.agrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,6vw,80px);align-items:center}
+.about h2{font-size:clamp(42px,6vw,84px);margin-bottom:26px}
+.bio{font-size:14.5px;line-height:1.9;color:#B3A497;max-width:600px}
+.bio b{color:#F3DBB3;font-weight:500}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;padding-top:24px;margin-top:22px;border-top:1px solid rgba(140,109,79,.25)}
+.stats b{display:block;font:400 clamp(28px,3vw,40px)/1 "Bebas Neue",sans-serif;color:#F4EBE2;white-space:nowrap}
+.stats div:nth-child(even) b{color:var(--gold)}
+.stats span{display:block;margin-top:6px;font:500 9.5px/1.5 Montserrat;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.pwrap{position:relative;perspective:1400px;display:flex;justify-content:center}
+.pring{position:absolute;inset:-24px;border-radius:24px;filter:blur(36px);opacity:.15;background:conic-gradient(from 0deg,var(--gold),var(--bronze) 30%,transparent 60%,var(--gold));transition:opacity 1.5s,transform 3s}
+.pwrap:hover .pring{opacity:.35;transform:rotate(180deg) scale(1.1)}
+.pcard{position:relative;padding:14px;border:1px solid rgba(140,109,79,.4);background:rgba(18,15,12,.8);box-shadow:0 25px 70px rgba(0,0,0,.95);transform-style:preserve-3d;transition:border-color .5s,transform .2s ease-out;will-change:transform}
+.pcard:hover{border-color:rgba(212,175,55,.8)}
+.corner{position:absolute;width:24px;height:24px;border-color:var(--gold);border-style:solid;box-shadow:0 0 10px rgba(212,175,55,.35);transition:transform .5s}
+.c1{top:0;left:0;border-width:2px 0 0 2px}.c2{top:0;right:0;border-width:2px 2px 0 0}.c3{bottom:0;left:0;border-width:0 0 2px 2px}.c4{bottom:0;right:0;border-width:0 2px 2px 0}
+.pcard:hover .c1{transform:translate(-3px,-3px)}.pcard:hover .c2{transform:translate(3px,-3px)}.pcard:hover .c3{transform:translate(-3px,3px)}.pcard:hover .c4{transform:translate(3px,3px)}
+.pimg{position:relative;overflow:hidden;width:min(380px,78vw);aspect-ratio:4/5;background:#000}
+.pimg img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;filter:brightness(.94) contrast(1.06) grayscale(.15);transition:filter .7s}
+.pcard:hover .pimg img{filter:brightness(1.05) contrast(1.1)}
+.pimg::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.15) 45%,transparent)}
+.spot{position:absolute;inset:0;z-index:1;mix-blend-mode:overlay;opacity:0;transition:opacity .3s;pointer-events:none}
+.pcard:hover .spot{opacity:1}
+.pimg .sig{position:absolute;right:16px;bottom:12px;z-index:2;font-size:36px;color:#F2D8A7;text-shadow:0 0 12px rgba(242,216,167,.5)}
+.creds{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:clamp(48px,6vw,80px);background:rgba(140,109,79,.25);border:1px solid rgba(140,109,79,.25)}
+.creds div{background:#000;padding:20px 22px}
+.creds b{display:block;font:500 12px/1.5 Montserrat;letter-spacing:.14em;text-transform:uppercase;color:#EAD8C7}
+.creds span{font-size:12.5px;color:var(--mute)}
 
-/* speaking */
-.speaking{background:var(--bg2);border-block:1px solid var(--line)}
-.when{display:block;font-size:14px;font-weight:600;color:var(--green);margin-bottom:10px}
+/* scroll stack */
+.phead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:56px}
+.phead h2{margin:0}
+.phead p{max-width:340px;font-size:13px;margin:0}
+.stack{position:relative;padding-bottom:12vh}
+.scard{position:sticky;top:calc(14vh + var(--i)*26px);margin-bottom:22px;transform-origin:top center;will-change:transform}
+.sin{position:relative;overflow:hidden;border:1px solid rgba(140,109,79,.5);border-radius:16px;background:var(--card);padding:clamp(26px,4vw,48px);box-shadow:0 25px 70px rgba(0,0,0,.98);transition:border-color .5s}
+.sin:hover{border-color:var(--gold)}
+.sin::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.8),transparent)}
+.wm{position:absolute;right:-6px;bottom:-26px;font:400 clamp(110px,14vw,170px)/1 "Bebas Neue";color:rgba(234,216,199,.05);pointer-events:none}
+.sgrid{position:relative;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(24px,4vw,48px)}
+.smeta{font:500 10.5px/1.6 ui-monospace,Menlo,monospace;letter-spacing:.22em;color:var(--mute);margin-bottom:8px}
+.smeta b{color:var(--gold);font-weight:700;margin-right:6px}
+.sclient{font:500 11px Montserrat;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2);margin-bottom:6px}
+.scard h3{font-size:clamp(34px,4.6vw,60px);line-height:.92;color:#fff;margin-bottom:16px;transition:color .3s}
+.sin:hover h3{color:#F7E7C4}
+.scard p{font-size:14px;line-height:1.85;color:#BDB0A4;max-width:620px;margin-bottom:22px}
+.pills{display:flex;flex-wrap:wrap;gap:8px;padding-top:18px;border-top:1px solid rgba(140,109,79,.25)}
+.pills span{padding:5px 12px;font:500 10px/1.4 Montserrat;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(140,109,79,.4);background:#16120E;color:#E8D7C5;border-radius:2px}
+.sr{padding-left:clamp(0px,2vw,24px);border-left:1px solid rgba(140,109,79,.25);display:flex;flex-direction:column;gap:10px}
+.mlabel{font:500 9.5px ui-monospace,Menlo,monospace;letter-spacing:.25em;color:var(--bronze);margin-bottom:4px}
+.metric{display:flex;justify-content:space-between;gap:12px;padding:13px 14px;border:1px solid rgba(140,109,79,.25);background:#050403;border-radius:2px}
+.metric span{font:400 10px ui-monospace,Menlo,monospace;color:var(--mute);letter-spacing:.08em}
+.metric b{font:500 11px ui-monospace,Menlo,monospace;color:#F7E7C4;text-align:right}
+.more-h{display:flex;align-items:center;gap:16px;margin:30px 0 18px;font:500 11px Montserrat;letter-spacing:.3em;text-transform:uppercase;color:var(--soft)}
+.more-h span{color:var(--gold)}
+.rlist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px}
+.ritem{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 14px;padding:15px 0;border-bottom:1px solid rgba(140,109,79,.2)}
+.rc{grid-column:1;font:500 10px/1.5 Montserrat;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.ritem b{grid-column:1;font-weight:400;color:#E8DFD8;font-size:14px}
+.ry{grid-column:2;grid-row:1/3;align-self:center;font:400 10.5px ui-monospace,Menlo,monospace;color:var(--bronze);white-space:nowrap;text-align:right}
+.ritem em{grid-column:1;font-style:normal;font:500 9.5px Montserrat;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+details.early{margin-top:26px;border-top:1px solid rgba(140,109,79,.25)}
+details.early summary{cursor:pointer;list-style:none;padding:18px 0;font:500 11px Montserrat;letter-spacing:.3em;text-transform:uppercase;color:var(--soft);display:flex;justify-content:space-between}
+details.early summary::-webkit-details-marker{display:none}
+details.early summary::after{content:"+";color:var(--gold);font-size:16px}
+details[open].early summary::after{content:"−"}
 
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:20px}
+.lg7{grid-column:span 7}.lg5{grid-column:span 5}.lg12{grid-column:span 12}
+.bcard{position:relative;padding:clamp(26px,3vw,36px);border:1px solid rgba(140,109,79,.35);background:rgba(16,13,11,.85);transition:border-color .5s,transform .3s,box-shadow .5s}
+.bcard::before,.bcard::after{content:"";position:absolute;width:12px;height:12px;border-color:rgba(212,175,55,.4);border-style:solid;transition:border-color .3s}
+.bcard::before{top:0;left:0;border-width:1px 0 0 1px}.bcard::after{bottom:0;right:0;border-width:0 1px 1px 0}
+.bcard:hover{border-color:rgba(212,175,55,.8);transform:translateY(-5px);box-shadow:0 16px 45px rgba(212,175,55,.14)}
+.bcard:hover::before,.bcard:hover::after{border-color:var(--gold)}
+.bh{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.badge{font:500 10px ui-monospace,Menlo,monospace;letter-spacing:.25em;color:var(--gold)}
+.stat{font:400 10px ui-monospace,Menlo,monospace;padding:3px 10px;border:1px solid rgba(140,109,79,.4);background:#17130F;color:var(--soft)}
+.bcard h3{font-size:clamp(28px,3vw,40px);line-height:1;color:#fff;margin-bottom:10px}
+.bcard p{font-size:13.5px;line-height:1.8;max-width:620px}
 
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px;padding-top:24px;border-top:1px solid var(--line)}
-.stats b{display:block;font-family:"Space Grotesk",system-ui,sans-serif;font-weight:400;font-size:clamp(24px,2.4vw,32px);color:var(--ink);white-space:nowrap}
-.stats span{font-size:14px;color:var(--mute)}
-.sub{margin-top:14px}
-.filters{display:flex;flex-wrap:wrap;gap:10px;margin:30px 0 26px}
-.f{font:500 15px Inter,system-ui,sans-serif;color:#dfe3df;background:var(--card);border:1px solid var(--line);border-radius:999px;min-height:44px;padding:0 18px;cursor:pointer}
-.f i{font-style:normal;color:var(--mute);margin-left:4px}
-.f:hover{border-color:#34d39988}
-.f.on{background:var(--green);color:#10200a;border-color:var(--green)}.f.on i{color:#10200a}
-.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
-.pcard{display:flex;flex-direction:column;gap:8px;background:linear-gradient(180deg,#17191c,#121416);border:1px solid var(--line);border-radius:18px;padding:24px}
-.pcard[hidden]{display:none}
-.ptop{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:14px}
-.client{color:var(--green);font-weight:600}.yrs{color:var(--mute);white-space:nowrap}
-.pcard h3{font-weight:400;font-size:22px}
-.prole{font-size:14px;color:#c9cec9}
-.pcard p{font-size:15px;margin:4px 0 0;flex:1}
-.st{align-self:flex-start;font-size:13px;font-weight:600;border-radius:999px;padding:4px 12px;margin-top:6px}
-.st.done{background:#34d39926;color:#b7e08f}.st.live{background:#5ab4c626;color:#9fd8e4}.st.wip{background:#f2c66d24;color:#f2d79a}.st.plan{background:#ffffff14;color:#c8ccc8}
-.ggrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:40px}
-.gcard{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
-.gcard figure{position:relative;margin:0;height:0;padding-top:62.5%;overflow:hidden;background:#0e1012}
-.gcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.kind{z-index:1}
-.kind{position:absolute;left:12px;top:12px;font-size:12px;font-weight:600;color:#10200a;background:var(--green);border-radius:999px;padding:3px 10px}
-.gcard>div{padding:18px 20px 22px}
-.gcard .when{margin-bottom:6px}
-.gcard h3{font-size:19px;margin-bottom:8px}
-.gcard p{font-size:14.5px;margin:0}
-@media(max-width:1100px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.ggrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){.pgrid,.ggrid{grid-template-columns:minmax(0,1fr)}.stats{grid-template-columns:minmax(0,1fr)}}
+/* timeline */
+.route{position:relative;max-width:920px}
+.track,.fill{position:absolute;left:150px;top:6px;width:1px;background:rgba(140,109,79,.2)}
+.track{bottom:10px}
+.fill{width:2px;margin-left:-.5px;height:0;background:linear-gradient(var(--gold),var(--gold2),rgba(140,109,79,.1));box-shadow:0 0 10px var(--gold)}
+.stop{position:relative;display:flex;margin-bottom:44px}
+.yr{width:150px;flex:none;padding-right:32px;text-align:right;font:400 10px/1.8 ui-monospace,Menlo,monospace;letter-spacing:.15em;color:var(--bronze);text-transform:uppercase;transition:color .3s}
+.node{position:absolute;left:150px;top:5px;transform:translateX(-50%)}
+.node i{display:block;width:11px;height:11px;border-radius:50%;background:var(--card2);border:1px solid var(--bronze);transition:all .3s}
+.stop:hover .node i,.stop.lit .node i{background:var(--gold);border-color:var(--gold);box-shadow:0 0 12px var(--gold)}
+.stop:hover .yr,.stop.lit .yr{color:var(--gold)}
+.sc{padding-left:40px}
+.myr{display:none}
+.stop h3{font-size:clamp(26px,3vw,36px);line-height:1;color:#fff;margin-bottom:4px;transition:color .3s}
+.stop:hover h3{color:#F7E7C4}
+.org{display:block;font:500 10px/1.6 Montserrat;letter-spacing:.2em;text-transform:uppercase;color:var(--bronze);margin-bottom:8px}
+.stop p{font-size:13px;line-height:1.75;max-width:560px}
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:20px}
 
+/* publication */
+.pub{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:end;padding:clamp(28px,4vw,52px);border:1px solid rgba(140,109,79,.5);background:var(--card);overflow:hidden}
+.pub::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(212,175,55,.9),transparent)}
+.pub .smeta{margin-bottom:14px}
+.pub h3{font-size:clamp(30px,3.8vw,50px);line-height:.95;color:#fff;margin-bottom:16px;max-width:860px}
+.pub .au{font-size:13px;color:var(--soft);margin-bottom:12px}.pub .au b{color:#F3DBB3;font-weight:500}
+.pub .big{text-align:right}
+.pub .big b{display:block;font:400 clamp(56px,7vw,96px)/.9 "Bebas Neue";-webkit-background-clip:text;background-clip:text;color:transparent;background-image:linear-gradient(#F7E7C4,#C99E5D 55%,#543B1A)}
+.pub .big span{font:500 9.5px Montserrat;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
 
-.career{list-style:none;margin:40px 0 0;padding:0;border-left:2px solid #34d39955}
-.career li{position:relative;display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;padding:0 0 34px 30px}
-.career li::before{content:"";position:absolute;left:-8px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--green)}
-.career li:nth-child(-n+3)::before{background:var(--green)}
-.career time{color:var(--green);font-weight:600;white-space:nowrap}
-.career h3{font-size:21px}
-.org{font-size:15px;color:#cfd3cf;margin:4px 0 8px}.org b{font-weight:600;color:var(--ink)}
-.career p{font-size:15px;margin:0}
-.earlyh{margin:56px 0 18px;font-size:24px;font-weight:400}
-.early{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:32px}
-.early li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 16px;padding:14px 0;border-bottom:1px solid var(--line)}
-.early b{font-weight:600;font-size:15px}.early span{grid-column:1;font-size:14px;color:var(--mute)}
-.early em{grid-row:1/3;grid-column:2;align-self:center;font-style:normal;font-size:13px;color:var(--green);white-space:nowrap}
-.trainbox{margin-top:40px;padding:28px;border:1px solid var(--line);border-radius:18px;background:var(--card)}
-.trainbox h3{font-size:22px;font-weight:400;margin-bottom:12px}
-.trainbox ul{margin:0;padding-left:20px;color:var(--mute);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:40px;row-gap:6px}
-@media(max-width:860px){.career li{grid-template-columns:minmax(0,1fr);gap:4px}.early,.trainbox ul{grid-template-columns:minmax(0,1fr)}}
-
-
-
-.ggrid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
-.gopen{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;color:inherit}
-.gopen:hover img{transform:scale(1.03)}
-.gcard img{transition:transform .5s ease}
-.more{position:absolute;right:12px;bottom:12px;z-index:1;font-size:12px;font-weight:600;color:#fff;background:#000000a8;border-radius:999px;padding:4px 10px}
-#lb{width:min(1200px,96vw);max-height:94vh;padding:0;border:0;border-radius:16px;background:#050506;color:var(--ink);overflow:hidden}
-#lb::backdrop{background:#000000d9}
-#lb figure{margin:0;display:flex;flex-direction:column}
-#lb img{width:100%;max-height:82vh;object-fit:contain;background:#000;display:block}
-#lb figcaption{padding:12px 64px 14px 18px;font-size:15px;color:#d4d8d4}
-.lbb{position:absolute;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid #ffffff33;background:#0b0c0ecc;color:#fff;font-size:26px;line-height:1;cursor:pointer}
-.lbb:hover{border-color:var(--green);color:var(--green)}
-.lbx{top:12px;right:12px;font-size:18px}.lbp{left:12px;top:40%}.lbn{right:12px;top:40%}
-.lbb[hidden]{display:none}
-@media(max-width:1100px){.ggrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
-@media(max-width:600px){.ggrid{grid-template-columns:minmax(0,1fr)!important}}
-@media(prefers-reduced-motion:reduce){.gcard img{transition:none}}
-
-
-.pubs{border-top:1px solid var(--line)}
-.pub{margin-top:32px;padding:clamp(22px,3vw,36px);border:1px solid #34d39944;border-radius:20px;background:linear-gradient(135deg,#16201a,#121416 60%)}
-.pmeta{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;font-size:14px;color:var(--mute)}
-.lead-au{color:#10200a;background:var(--green);font-weight:600;border-radius:999px;padding:2px 12px}
-.pub h3{font-size:clamp(22px,2.4vw,30px);font-weight:400;margin:14px 0 10px;max-width:44ch}
-.pub h3 a{text-decoration:none}.pub h3 a:hover{color:var(--green)}
-.au{color:#d6dad6;margin-bottom:12px}.au b{color:var(--ink)}
-.plinks{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;margin-top:20px}
-.btn.sm{min-height:46px;font-size:15px;padding:0 22px}
-.doi{font-size:14px;color:var(--mute);text-decoration:none;overflow-wrap:anywhere}.doi:hover{color:var(--green)}
-
-
-.brand{white-space:nowrap}
-@media(max-width:1180px){
- .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#0b0c0ef5;padding:10px 18px 18px;border-bottom:1px solid var(--line)}
- .links.open{display:flex}
- .links a{padding:12px 14px;font-size:16px}
- .links a.on::after{display:none}
- .links a.pill{margin:8px 0 0;text-align:center}
- .menu{display:block}
-}
+/* gallery */
+.ggrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.gcard{border:1px solid rgba(140,109,79,.3);background:#0B0908;transition:border-color .4s,transform .4s}
+.gcard:hover{border-color:rgba(212,175,55,.7);transform:translateY(-4px)}
+.gopen{display:block;width:100%;padding:0;border:0;background:none;color:inherit;cursor:zoom-in}
+.gcard figure{position:relative;margin:0;height:0;padding-top:64%;overflow:hidden;background:#000}
+.gcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.35) brightness(.85) contrast(1.05);transition:filter .6s,transform .8s cubic-bezier(.16,1,.3,1)}
+.gcard:hover img{filter:none;transform:scale(1.05)}
+.gcard figure::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.65),transparent 50%)}
+.kind{position:absolute;z-index:1;left:14px;top:14px;padding:5px 10px;font:500 9px Montserrat;letter-spacing:.24em;border:1px solid rgba(212,175,55,.5);background:rgba(0,0,0,.6);color:#F3DBB3}
+.more{position:absolute;z-index:1;right:14px;bottom:12px;font:500 9px Montserrat;letter-spacing:.24em;color:#EAD8C7}
+.gtxt{padding:20px 22px 24px}
+.when{display:block;font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.15em;color:var(--gold);margin-bottom:8px;text-transform:uppercase}
+.gtxt h3{font-size:26px;line-height:1;color:#fff;margin-bottom:10px}
+.gtxt p{font-size:13px;line-height:1.75;margin:0}
+.trainbox{margin-top:40px;padding:30px;border:1px solid rgba(140,109,79,.3)}
+.trainbox ul{margin:12px 0 0;padding-left:18px;columns:2;column-gap:40px;color:var(--mute);font-size:13.5px}
+.trainbox h3{font-size:30px;color:#F7E7C4}
 
 /* insights */
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:40px}
-.card{border:1px solid var(--line);border-radius:18px;padding:28px;background:linear-gradient(180deg,#17191c,#121416)}
-.card .k{color:var(--green);font-size:14px;font-weight:600}
-.card h3{font-weight:400;font-size:24px;margin:10px 0 12px}
-.card p{font-size:15px;margin:0}
-.note{font-size:13px;color:#7d837f;margin-top:18px}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.icard{position:relative;padding:32px 30px;border:1px solid rgba(140,109,79,.3);background:#0B0908;transition:border-color .4s}
+.icard:hover{border-color:rgba(212,175,55,.7)}
+.icard .k{font:500 10px ui-monospace,Menlo,monospace;letter-spacing:.25em;color:var(--gold)}
+.icard h3{font-size:30px;line-height:1;color:#fff;margin:14px 0 12px}
+.icard p{font-size:13.5px;margin:0}
 
 /* contact */
-.contact .box{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;padding:clamp(28px,4vw,56px);border-radius:24px;border:1px solid #34d39944;background:radial-gradient(80% 140% at 0% 0%,#1d2a17,#121416 60%)}
-.contact .addr{list-style:none;margin:20px 0 0;padding:0;display:grid;gap:8px}
-.contact .addr li{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:16px}
-.contact .addr span{color:var(--mute);width:84px}
-.contact .addr a{text-decoration:none;white-space:nowrap}.contact .addr a:hover{color:var(--green)}
-footer{padding:28px max(4vw,18px);color:#7d837f;font-size:13px;border-top:1px solid var(--line)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.contact{text-align:center;overflow:hidden}
+.contact h2{font-size:clamp(56px,10vw,140px);margin-bottom:24px}
+.contact .lede{margin:0 auto 34px;text-align:center}
+.clist{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 36px;margin:40px 0 0}
+.clist a,.clist div{font:400 11px/1.6 Montserrat;letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
+.clist span{display:block;font-size:9px;color:var(--bronze);letter-spacing:.3em}
+.clist a:hover{color:var(--gold)}
+.visa{margin-top:28px;font-size:12px;color:var(--bronze);letter-spacing:.06em}
+footer{padding:30px max(5vw,20px);border-top:1px solid rgba(140,109,79,.2);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;font:400 10px Montserrat;letter-spacing:.24em;text-transform:uppercase;color:var(--bronze)}
 
+/* lightbox */
+#lb{width:min(1200px,96vw);max-height:94vh;padding:0;border:1px solid rgba(140,109,79,.4);background:#050403;color:var(--ink);overflow:hidden}
+#lb::backdrop{background:rgba(0,0,0,.92)}
+#lb figure{margin:0}#lb img{width:100%;max-height:82vh;object-fit:contain;background:#000}
+#lb figcaption{padding:14px 70px 16px 20px;font:400 11px Montserrat;letter-spacing:.14em;color:var(--soft)}
+.lbb{position:absolute;display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(140,109,79,.6);background:rgba(0,0,0,.7);color:#EAD8C7;font-size:22px;cursor:pointer}
+.lbb:hover{border-color:var(--gold);color:var(--gold)}
+.lbx{top:12px;right:12px;font-size:16px}.lbp{left:12px;top:40%}.lbn{right:12px;top:40%}.lbb[hidden]{display:none}
 
-@media(max-width:1100px){
- .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
- .gap{display:none}
- .figure{left:auto;right:-6%;transform:none}
- .services{grid-column:1;grid-row:2}
-}
-@media(max-width:860px){
- .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;background:#0b0c0ef5;padding:10px 18px 18px;border-bottom:1px solid var(--line)}
- .links.open{display:flex}
- .links a.pill{margin:8px 0 0;text-align:center}
- .menu{display:block}
- .hero{display:block;min-height:0}
- .hero .wrap{grid-template-columns:minmax(0,1fr);padding-top:28px}
- .figure{position:relative;left:auto;right:auto;top:auto;transform:none;margin:8px auto 0;width:min(100%,460px)}
- .figure img{width:100%;height:auto}
- .services{grid-column:auto;grid-row:auto;grid-template-columns:minmax(0,1fr) minmax(0,1fr);padding-bottom:40px;margin-top:36px;padding-top:28px;border-top:1px solid var(--line)}
- .split,.contact .box{grid-template-columns:minmax(0,1fr)}
- .cards{grid-template-columns:minmax(0,1fr)}
-}
-@media(max-width:600px){.services{grid-template-columns:minmax(0,1fr)}.services li{gap:16px}.services svg{width:44px;height:36px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-
-/* ===== ERTH-inspired layer: type, buttons, motion ===== */
-h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;letter-spacing:-.025em}
-h3{font-weight:600;letter-spacing:-.01em}
-.hero h1{font-size:clamp(46px,5vw,76px);line-height:1.02;letter-spacing:-.035em}
-h2{font-size:clamp(32px,3.8vw,52px);line-height:1.05}
-.role{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:500;color:#e8efeb}
-.tag{font-style:normal;font-weight:400;color:var(--mute)}
-.tag::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px var(--green);margin-right:12px;vertical-align:middle;animation:breathe 3s ease-in-out infinite}
-.label{font:500 12px/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.2em;text-transform:uppercase;color:#34d399cc;display:inline-flex;align-items:center;gap:10px}
-.label::before{content:"";width:22px;height:1px;background:currentColor}
-.when,.client,.card .k,.career time,.early em{font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:500;font-size:12.5px;letter-spacing:.06em}
-.stats b{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:700;letter-spacing:-.03em}
-.pub h3,.story h3,.card h3,.earlyh,.trainbox h3,.pcard h3{font-weight:600}
-.rule{height:2px;background:linear-gradient(90deg,var(--green),transparent);box-shadow:0 0 14px #34d39966}
-/* buttons */
-.btn{font-family:"Space Grotesk",system-ui,sans-serif;border-radius:12px;min-height:56px;padding:0 32px;background:#10b981;color:#04140d;font-weight:700;font-size:16px;letter-spacing:-.005em;box-shadow:0 0 20px rgba(16,185,129,.3);transition:transform .25s cubic-bezier(.22,1,.36,1),background-color .2s,box-shadow .25s}
-.btn:hover{background:#34d399;transform:scale(1.05);box-shadow:0 0 30px rgba(16,185,129,.5)}
-.btn:active{transform:scale(.98)}
-.btn svg{transition:transform .25s cubic-bezier(.22,1,.36,1)}.btn:hover svg{transform:translateX(4px)}
-.btn.ghost,.links a.pill{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.1);color:#fff;font-weight:600;box-shadow:none}
-.links a.pill{border-radius:12px;padding:9px 20px;font-family:"Space Grotesk",system-ui,sans-serif;transition:all .25s cubic-bezier(.22,1,.36,1)}
-.links a.pill:hover,.btn.ghost:hover{background:#10b981;border-color:#10b981;color:#04140d;transform:scale(1.04);box-shadow:0 0 24px rgba(16,185,129,.4)}
-.f{border-radius:12px;background:rgba(255,255,255,.03);border-color:rgba(255,255,255,.1);font-family:"Space Grotesk",system-ui,sans-serif;font-weight:500;transition:all .2s}
-.f:hover{background:rgba(255,255,255,.08);border-color:#34d39966}
-.f.on{background:#10b981;border-color:#10b981;color:#04140d;box-shadow:0 0 18px rgba(16,185,129,.35)}
-.kind,.lead-au{border-radius:8px;background:#10b981;color:#04140d;font-family:"JetBrains Mono",ui-monospace,monospace;font-weight:500;letter-spacing:.04em}
-.menu{border-radius:12px;background:rgba(255,255,255,.03);font-family:"Space Grotesk",system-ui,sans-serif}
-/* glass nav that firms up on scroll */
-nav{position:fixed;left:0;right:0;top:0;background:rgba(5,7,6,.35);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:background-color .3s,border-color .3s}
-nav.scrolled{background:rgba(5,7,6,.82);border-bottom-color:rgba(255,255,255,.06)}
-body{padding-top:0}
-.hero{padding-top:72px}
-.links a{font-family:"Space Grotesk",system-ui,sans-serif;font-weight:500;transition:color .2s}
-.links a.on::after{height:2px;box-shadow:0 0 10px var(--green)}
-/* cards: glass + emerald edge on hover */
-.pcard,.gcard,.card,.cred,.trainbox{background:rgba(255,255,255,.02);border-color:rgba(255,255,255,.07);transition:transform .35s cubic-bezier(.22,1,.36,1),border-color .3s,box-shadow .35s}
-.pcard:hover,.gcard:hover,.card:hover,.cred:hover{transform:translateY(-4px);border-color:#34d39955;box-shadow:0 18px 40px -20px rgba(16,185,129,.35)}
-.services svg{filter:drop-shadow(0 0 8px rgba(52,211,153,.35))}
-.services li{transition:transform .3s cubic-bezier(.22,1,.36,1)}.services li:hover{transform:translateX(6px)}
-/* ambient blobs in hero */
-.blob{position:absolute;z-index:0;border-radius:50%;filter:blur(80px);opacity:.45;pointer-events:none;animation:blob 14s ease-in-out infinite}
-.blob.b1{width:420px;height:420px;left:-120px;top:10%;background:#10b98155}
-.blob.b2{width:360px;height:360px;right:-100px;top:35%;background:#0ea5e933;animation-delay:-5s}
-/* animated gradient border on publication card */
-@property --angle{syntax:"<angle>";initial-value:0deg;inherits:false}
-.pub{position:relative;border:1px solid transparent;background:linear-gradient(#0a110d,#0a110d) padding-box,conic-gradient(from var(--angle),rgba(52,211,153,.05),#34d399,rgba(52,211,153,.05) 30%) border-box;animation:rotate-border 6s linear infinite}
-/* scanner beam over section headings */
-.band>.wrap>h2{position:relative}
 /* scroll reveal */
-.rv{opacity:0;transform:translateY(28px);filter:blur(6px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1),filter .9s cubic-bezier(.22,1,.36,1);transition-delay:var(--d,0s)}
+.rv{opacity:0;transform:translateY(30px);filter:blur(10px);transition:opacity 1.2s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1),filter 1.2s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s)}
 .rv.in{opacity:1;transform:none;filter:none}
-.figure{will-change:transform}
-@keyframes blob{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(30px,-50px) scale(1.1)}66%{transform:translate(-20px,20px) scale(.9)}}
-@keyframes breathe{0%,100%{opacity:.8;transform:scale(1)}50%{opacity:1;transform:scale(1.15)}}
-@keyframes rotate-border{to{--angle:360deg}}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}.blob,.pub,.tag::before{animation:none}.btn:hover,.pcard:hover,.gcard:hover,.card:hover,.cred:hover{transform:none}}
+
+@keyframes up{to{opacity:1;transform:none;filter:none}}
+@keyframes drift{from{transform:scale(1)}to{transform:scale(1.06) translateX(-1%)}}
+@keyframes beam{from{opacity:.55;transform:rotate(12deg)}to{opacity:1;transform:rotate(17deg)}}
+@keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6);transform-origin:top}50%{opacity:1;transform:scaleY(1)}}
+
+@media(max-width:1080px){.links{display:none}.menu{display:block}
+ .links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:8px 24px 20px;background:rgba(0,0,0,.95);border-bottom:1px solid rgba(140,109,79,.25)}
+ .links.open a{padding:14px 0}
+ .quote{display:none}}
+@media(max-width:900px){
+ .agrid,.sgrid,.pub{grid-template-columns:minmax(0,1fr)}
+ .sr{border-left:0;padding-left:0;border-top:1px solid rgba(140,109,79,.25);padding-top:18px}
+ .lg7,.lg5,.lg12{grid-column:span 12}
+ .ggrid,.cards{grid-template-columns:minmax(0,1fr)}
+ .rlist,.creds,.edu{grid-template-columns:minmax(0,1fr)}
+ .pub .big{text-align:left}
+ .trainbox ul{columns:1}
+ .scard{position:relative;top:auto}
+}
+@media(max-width:700px){
+ .hero{height:auto;min-height:0}
+ .stage{position:relative;height:62vh;justify-content:center}
+ .stage img{margin:0;height:100%;-webkit-mask-image:linear-gradient(0deg,transparent 0,#000 30%);mask-image:linear-gradient(0deg,transparent 0,#000 30%)}
+ .stage::before{background:linear-gradient(0deg,#000 2%,transparent 40%)}
+ .hcontent{height:auto;padding:0 20px 70px;margin-top:-60px}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .track,.fill,.node{left:8px}.yr{display:none}.sc{padding-left:34px}.myr{display:block;font:400 10px ui-monospace,Menlo,monospace;letter-spacing:.15em;color:var(--gold);margin-bottom:6px}
+ .talk{display:none}.scrollcue{display:none}
+}
+@media(prefers-reduced-motion:reduce){*,.rv,.reveal>*{animation:none!important;transition:none!important;opacity:1!important;transform:none!important;filter:none!important}}
 </style>
 </head>
 <body>
-<nav><div class="wrap">
- <a class="brand" href="#home" aria-label="Hla Phong Ko, home">
-  <svg viewBox="0 0 44 30" aria-hidden="true"><path d="M4 28C6 16 14 9 26 8c-4 6-9 14-22 20z" fill="#10b981"/><path d="M14 22C18 10 28 3 42 2c-4 9-12 18-28 20z" fill="#34d399"/></svg>
-  HLA PHONG KO
- </a>
- <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="links">Menu</button>
- <div class="links" id="links">
-  <a href="#home" class="on">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#publications">Research</a><a href="#speaking">Speaking</a><a href="#insights">Insights</a><a href="#contact" class="pill">Contact</a>
- </div>
+<div class="cur" id="cur"></div>
+<nav id="nav"><div class="wrap">
+ <a class="brand" href="#top">HLA PHONG KO.</a>
+ <div class="links" id="links"><a href="#about">About</a><a href="#work">Projects</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#research">Research</a><a href="#speaking">Speaking</a><a href="#contact">Contact</a></div>
+ <a class="talk" href="#contact">LET'S TALK ↗</a>
+ <button class="menu" id="menuBtn" aria-expanded="false" aria-controls="links">MENU</button>
 </div></nav>
 
-<main>
-<section class="hero" id="home">
- <div class="floor"></div>
- <div class="blob b1"></div><div class="blob b2"></div>
- <canvas class="wave" id="wave" aria-hidden="true"></canvas>
-  <div class="figure"><img src="assets/seated-hero.jpg" alt="Hla Phong Ko seated in a grey lounge chair, wearing a dark suit and blue shirt" fetchpriority="high"></div>
+<main id="top">
+<section class="hero">
+ <div class="stage"><img src="assets/seated-hero.jpg" alt="Hla Phong Ko seated in a lounge chair, wearing a dark suit" fetchpriority="high"><div class="beam"></div><canvas class="dust" id="dust" aria-hidden="true"></canvas></div>
+ <div class="hcontent"><div class="hgrid">
+  <div class="hl reveal">
+   <h1><span class="t1">Turning</span><span class="t2">Sustainability</span><span class="t3">Into Value</span></h1>
+   <div class="sub">ESG Strategy <i>•</i> Circular Economy &amp; EPR <i>•</i> Carbon Accounting</div>
+   <p class="lede">I'm Hla Phong Ko, an ESG and circular economy consultant in Bangkok. I turn sustainability commitments into auditable data, working partnerships and programmes that deliver across Southeast Asia.</p>
+   <div class="ctas"><a class="btn" href="#work">Explore my work <i>↗</i></a><a class="btn ghost" href="Hla_Phong_Ko_CV_2026.pdf" download>Download CV <i>↓</i></a></div>
+  </div>
+  <div class="quote"><span class="qm">“</span>Data that can be audited.<br>Impact that can be measured.<div class="gl"></div><div class="sig">Hla Phong Ko</div></div>
+ </div></div>
+ <div class="scrollcue">SCROLL</div>
+</section>
+
+<section class="band about" id="about">
+ <div class="glow" style="width:34rem;height:34rem;left:8%;top:18%;background:rgba(212,175,55,.09)"></div>
  <div class="wrap">
-  <div class="intro">
-   <h1>Hla Phong Ko</h1>
-   <div class="role"><span class="nw">ESG &amp; Circular Economy</span> Consultant</div>
-   <div class="rule"></div>
-   <p class="tag">Turning sustainability into<br>business value across Asia</p>
-   <div class="cta">
-    <a class="btn" href="#projects">View my work <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
-    <a class="btn ghost" href="#contact">Get in touch</a>
+  <div class="eyebrow rv">01 / About me</div>
+  <div class="agrid">
+   <div>
+    <h2 class="rv"><span class="t1">Data that can be audited.</span><span class="t2">Impact that can be measured.</span></h2>
+    <p class="bio rv">I'm <b>Hla Phong Ko</b>, an ESG and circular economy consultant with 8 years in sustainability business development across Thailand, Myanmar, Vietnam and Singapore. I work where environmental compliance, digital innovation and commercial partnerships meet: EPR, GHG accounting, waste audits and traceability platforms.</p>
+    <p class="bio rv">Previously Business Development Director and Technical Lead Advisor at RecyGlo. My path started at sea with a degree in Nautical Science and moved into climate science, a mix of operational discipline and research rigour I bring to every engagement.</p>
+    <div class="stats rv"><div><b>15 Yrs</b><span>Career experience</span></div><div><b>30+</b><span>Projects, 7 countries</span></div><div><b>87.42</b><span>tC/ha, published research</span></div><div><b>ISO 9001</b><span>Internal auditor</span></div></div>
+   </div>
+   <div class="pwrap rv"><div class="pring"></div>
+    <div class="pcard" id="tilt"><span class="corner c1"></span><span class="corner c2"></span><span class="corner c3"></span><span class="corner c4"></span>
+     <div class="pimg"><img src="assets/portrait.jpg" alt="Portrait of Hla Phong Ko in a grey blazer"><div class="spot" id="spot"></div><span class="sig">Hla Phong Ko</span></div>
+    </div>
    </div>
   </div>
-  <div class="gap"></div>
-  <ul class="services" aria-label="Areas of expertise">
-   <li><svg viewBox="0 0 54 44"><path d="M12 36C10 20 20 8 42 6c2 20-8 32-26 30"/><path d="M12 36l18-18"/><path d="M22 26h-6M27 21v-6"/></svg>ESG Strategy &amp; Reporting</li>
-   <li><svg viewBox="0 0 54 44"><path d="M42 18a16 16 0 0 0-29-6"/><path d="M12 4v8h8"/><path d="M12 26a16 16 0 0 0 29 6"/><path d="M42 40v-8h-8"/></svg>Circular Economy &amp; EPR</li>
-   <li><svg viewBox="0 0 54 44"><path d="M15 36h26a9 9 0 0 0 1-18 13 13 0 0 0-25-3 10 10 0 0 0-2 21z"/><text x="18" y="31" font-size="10" font-family=Inter,system-ui,sans-serif fill="#34d399" stroke="none" font-weight="600">CO₂</text></svg>GHG / Carbon Accounting</li>
-   <li><svg viewBox="0 0 54 44"><path d="M27 4l18 9-18 9-18-9z"/><path d="M9 21l18 9 18-9"/><path d="M9 29l18 9 18-9"/></svg>Sustainability Platforms<br>&amp; Digital MRV</li>
-   <li><svg viewBox="0 0 54 44"><path d="M3 16l9-4 8 3 7-4 7 2 8-3 9 4"/><path d="M3 16l6 14 5 2M51 16l-6 14-6 4"/><path d="M20 15l-6 8c2 2 5 2 7 0l4-4 12 11c1 2-1 4-3 3l-6-5"/><path d="M33 33l-4-3M29 36l-4-3M24 37l-3-2"/></svg>Strategic Partnerships<br>&amp; Business Development</li>
-  </ul>
+  <div class="creds rv">
+   <div><b>MSc Climate Change &amp; Development</b><span>Vietnam Japan University, Hanoi · 2025</span></div>
+   <div><b>BSc Nautical Science, High Honors</b><span>Myanmar Maritime University · 2012</span></div>
+   <div><b>QMS ISO 9001:2015 Internal Auditor</b><span>Bureau Veritas, Thailand · 2019</span></div>
+   <div><b>ISO 14067 Carbon Footprint of Products</b><span>Alison, Ireland · online course</span></div>
+   <div><b>Languages</b><span>Burmese (native) · English (C2)</span></div>
+   <div><b>Based in Bangkok</b><span>Thailand · Myanmar · Vietnam · ASEAN</span></div>
+  </div>
  </div>
 </section>
 
-<section class="band about" id="about"><div class="wrap split">
- <div>
-  <div class="label">About</div>
-  <h2>Connecting climate ambition with business value.</h2>
-  <div class="rule"></div>
-  <p>I am an ESG and circular economy consultant working across Thailand, Myanmar, Vietnam and the wider ASEAN region. My work sits where environmental compliance, digital innovation and commercial partnerships meet: waste audits, GHG accounting, EPR traceability platforms, and the partnerships that make them stick.</p>
-  <p>Previously Business Development Director and Technical Lead Advisor at RecyGlo, where I led business development, client advisory and regional partnerships, from multi-store audits for global brands to blockchain-enabled recycling traceability.</p>
-  <p>My path started at sea, with a degree in Nautical Science, and moved into climate science. That mix of operational discipline and research rigour shapes how I work: auditable numbers, practical delivery.</p>
-  <div class="stats">
-   <div><b>15 years</b><span>Career in shipping, operations and sustainability</span></div>
-   <div><b>30+</b><span>Projects across 7 countries</span></div>
-   <div><b>87.42 tC/ha</b><span>Mangrove carbon stock, published research</span></div>
+<section class="band" id="work" style="padding-bottom:40px">
+ <div class="glow" style="width:36rem;height:36rem;right:10%;top:10%;background:rgba(212,175,55,.05)"></div>
+ <div class="wrap">
+  <div class="eyebrow rv">02 / Featured work</div>
+  <div class="phead rv"><h2><span class="t1">Selected work.</span><span class="t2">Measured impact.</span></h2><p>Scroll to stack the flagship engagements. Each one turned a sustainability commitment into something a client could operate and verify.</p></div>
+  <div class="stack" id="stack">
+   <article class="scard"><div class="sin">
+    <span class="wm">01</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>01 //</b> DIGITAL MRV / RECYCLING TRACEABILITY</div>
+      <div class="sclient">Second Life / Royce</div>
+      <h3>Blockchain-enabled recycling traceability</h3>
+      <p>Designed the framework for collector-to-processor-to-manufacturer traceability: waste manifests, QR handshakes, material transformation, mass-balance logic, product passports and recycling evidence.</p>
+      <div class="pills"><span>Traceability</span><span>Mass balance</span><span>Product passports</span><span>QR chain of custody</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>Solution originator</b></div><div class="metric"><span>SCOPE</span><b>Collector → manufacturer</b></div><div class="metric"><span>STATUS</span><b>Platform in use</b></div>
+     </div>
+    </div></div></article>
+   <article class="scard"><div class="sin">
+    <span class="wm">02</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>02 //</b> EPR / ESG / GHG PLATFORM</div>
+      <div class="sclient">Wongpanit Head Office</div>
+      <h3>EPR, ESG and GHG reporting partnership</h3>
+      <p>Initiated and negotiated the partnership, then shaped the platform concept: waste traceability, evidence documents, supply-chain GHG calculation and training for franchise and operational teams.</p>
+      <div class="pills"><span>EPR</span><span>GHG accounting</span><span>Partnership</span><span>Training</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>Initiator & negotiator</b></div><div class="metric"><span>MILESTONE</span><b>MOU, Nov 2025</b></div><div class="metric"><span>STATUS</span><b>Deployed; pilot pending</b></div>
+     </div>
+    </div></div></article>
+   <article class="scard"><div class="sin">
+    <span class="wm">03</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>03 //</b> WASTE AUDIT</div>
+      <div class="sclient">Starbucks Thailand</div>
+      <h3>Multi-store waste characterisation</h3>
+      <p>Led a five-store Bangkok assessment of waste composition, contamination and recycling performance, with recommendations to improve segregation and diversion.</p>
+      <div class="pills"><span>Waste audit</span><span>Segregation</span><span>Diversion</span><span>Retail</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>Project lead</b></div><div class="metric"><span>SITES</span><b>5 stores, Bangkok</b></div><div class="metric"><span>YEAR</span><b>2025</b></div>
+     </div>
+    </div></div></article>
+   <article class="scard"><div class="sin">
+    <span class="wm">04</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>04 //</b> MATERIAL-FLOW AUDIT</div>
+      <div class="sclient">Cobra International</div>
+      <h3>Resin and paint material audits</h3>
+      <p>Directed assessments across production buildings and a spray room, reconciling standard versus actual material use, waste and quality deviations, and built inventory-to-application monitoring logic.</p>
+      <div class="pills"><span>Material flow</span><span>KPI baselines</span><span>Root cause</span><span>Process control</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>Audit design & reporting</b></div><div class="metric"><span>SCOPE</span><b>Multi-building</b></div><div class="metric"><span>YEARS</span><b>2025–2026</b></div>
+     </div>
+    </div></div></article>
+   <article class="scard"><div class="sin">
+    <span class="wm">05</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>05 //</b> DEVELOPMENT / CIRCULAR FEED</div>
+      <div class="sclient">Mercy Corps · Sein Lan</div>
+      <h3>Livestock monitoring and MEL overhaul</h3>
+      <p>Reviewed smallholder survey systems, corrected the feed-conversion-ratio method to use weight gain, improved batch and sales traceability, and set a path to future GHG and LCA measurement.</p>
+      <div class="pills"><span>M&E</span><span>Survey design</span><span>FCR method</span><span>Myanmar</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>M&E technical advisor</b></div><div class="metric"><span>COUNTRY</span><b>Myanmar</b></div><div class="metric"><span>YEAR</span><b>2026</b></div>
+     </div>
+    </div></div></article>
+   <article class="scard"><div class="sin">
+    <span class="wm">06</span>
+    <div class="sgrid">
+     <div class="sl">
+      <div class="smeta"><b>06 //</b> RESEARCH / BLUE CARBON</div>
+      <div class="sclient">Vietnam Japan University</div>
+      <h3>Mangrove blue carbon, Tien Lang</h3>
+      <p>Field biomass and soil-carbon assessment across 15 plots combining allometry, LOI–TOC analysis and remote sensing. Published as first author in Applied Environmental Research (2026).</p>
+      <div class="pills"><span>Blue carbon</span><span>Remote sensing</span><span>Soil carbon</span><span>Peer-reviewed</span></div>
+     </div>
+     <div class="sr">
+      <span class="mlabel">// KEY FACTS</span>
+      <div class="metric"><span>ROLE</span><b>Lead researcher</b></div><div class="metric"><span>RESULT</span><b>87.42 tC/ha</b></div><div class="metric"><span>STATUS</span><b>Published 2026</b></div>
+     </div>
+    </div></div></article>
+  </div>
+  <div class="more-h rv"><span>+11</span> More engagements, 2024–2026</div>
+  <div class="rlist"><div class="ritem"><span class="rc">INSEE Ecocycle</span><b>Industrial waste pilot</b><span class="ry">2026</span><em>Pilot completed</em></div><div class="ritem"><span class="rc">Sanaterra</span><b>Corporate carbon accounting platform</b><span class="ry">2025–2026</span></div><div class="ritem"><span class="rc">ASEAN Foundation / Maybank</span><b>eYAA5 and eYAA6 youth programmes</b><span class="ry">2025–2026 · Thailand</span></div><div class="ritem"><span class="rc">Project Closed Loop</span><b>School recycling and impact reporting</b><span class="ry">2026</span></div><div class="ritem"><span class="rc">Tetra Pak Vietnam</span><b>Used beverage carton recovery</b><span class="ry">2025–2026</span></div><div class="ritem"><span class="rc">TMH</span><b>Organisational GHG inventory</b><span class="ry">2024–2025</span></div><div class="ritem"><span class="rc">HEINEKEN Myanmar</span><b>Circular waste and resource recovery</b><span class="ry">2026</span><em>Scope in progress</em></div><div class="ritem"><span class="rc">DKT Myanmar</span><b>Environmental and social management reporting</b><span class="ry">2026</span></div><div class="ritem"><span class="rc">ACHIEVE-SEA</span><b>Regional health-system innovation</b><span class="ry">2026</span><em>Proposal stage</em></div><div class="ritem"><span class="rc">RecyGlo Vietnam</span><b>Partnerships, public-sector engagement and UBC consulting</b><span class="ry"></span></div><div class="ritem"><span class="rc">Myanmar climate proposal</span><b>Integrated mangrove and household biogas concept</b><span class="ry">2026</span><em>Proposal stage</em></div></div>
+  <details class="early"><summary>Earlier projects, 2018–2023 (14)</summary><div class="rlist"><div class="ritem"><span class="rc">ENI</span><b>Rural waste management system set-up</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Norwegian Retailers’ Environment Fund</span><b>Zero-plastic supply chain management</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Inle horse project</span><b>Biogas production</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Öko-Institut / KfW</span><b>Solar panel installation</b><span class="ry">Germany</span></div><div class="ritem"><span class="rc">Danish Embassy Responsible Business Fund</span><b>Low-value plastic recycling</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">ADB</span><b>Landfill management</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Inle Rose</span><b>Landfill management, Shan State</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Used cooking oil</span><b>Used cooking oil to biodiesel</b><span class="ry">Singapore · Malaysia</span></div><div class="ritem"><span class="rc">Yoma Micro Power</span><b>Engine oil recycling</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Ngwe Saung Yacht Club</span><b>Landfill management audit</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Maha Limited</span><b>Carbon footprint audit and reporting</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">Coca-Cola</span><b>Bin set-up and landfill management</b><span class="ry">Myanmar</span></div><div class="ritem"><span class="rc">USAID WE4F</span><b>Circular economy in agricultural products and services</b><span class="ry">Thailand · Vietnam</span></div><div class="ritem"><span class="rc">K-Startup programme</span><b>ESG reporting and waste management platform services</b><span class="ry">Korea</span></div></div></details>
+ </div>
+</section>
+
+<section class="band" id="expertise">
+ <div class="glow" style="width:30rem;height:30rem;left:20%;top:30%;background:rgba(140,109,79,.08)"></div>
+ <div class="wrap">
+  <div class="eyebrow rv">03 / Expertise</div>
+  <h2 class="rv"><span class="t1">Five disciplines.</span><span class="t2">One integrated practice.</span></h2>
+  <div class="bento">
+   <div class="bcard lg7 rv"><div class="bh"><span class="badge">CORE PILLAR</span><span class="stat">8 YRS IN ESG</span></div>
+    <h3>ESG STRATEGY & REPORTING</h3><p>Materiality, disclosure and ESG reporting aligned with global frameworks, built on data that can be audited.</p><div class="pills"><span>ESG reporting</span><span>Materiality</span><span>Stakeholder engagement</span><span>Sustainability strategy</span></div></div>
+   <div class="bcard lg5 rv"><div class="bh"><span class="badge">REGULATION</span><span class="stat">TH · MM · VN</span></div>
+    <h3>CIRCULAR ECONOMY & EPR</h3><p>EPR readiness, take-back models and recycler partnerships that turn compliance fees into recovered value.</p><div class="pills"><span>EPR</span><span>Recycling value chains</span><span>Waste audits</span></div></div>
+   <div class="bcard lg5 rv"><div class="bh"><span class="badge">MEASUREMENT</span><span class="stat">SCOPE 1–3</span></div>
+    <h3>GHG & CARBON ACCOUNTING</h3><p>Organisational and product footprints, Scope 1–3, and supply-chain emissions.</p><div class="pills"><span>GHG Protocol</span><span>ISO 14064</span><span>ISO 14067</span><span>Scope 3</span></div></div>
+   <div class="bcard lg7 rv"><div class="bh"><span class="badge">INFRASTRUCTURE</span><span class="stat">BLOCKCHAIN MRV</span></div>
+    <h3>PLATFORMS & DIGITAL MRV</h3><p>Traceability, mass balance and evidence trails across collectors, processors and manufacturers.</p><div class="pills"><span>Traceability</span><span>Mass balance</span><span>Product passports</span><span>Dashboards</span></div></div>
+   <div class="bcard lg12 rv"><div class="bh"><span class="badge">GROWTH</span><span class="stat">30+ PROJECTS · 7 COUNTRIES</span></div>
+    <h3>PARTNERSHIPS & BUSINESS DEVELOPMENT</h3><p>Partnerships with corporates, recyclers, industry associations and development partners, from first pitch to signed MOU and delivery. Proposal and grant writing for UNIDO, Mercy Corps, ASEAN Foundation and climate funds.</p><div class="pills"><span>Partnerships</span><span>Proposal writing</span><span>Grant writing</span><span>Training & facilitation</span><span>ISO 9001 auditing</span></div></div>
   </div>
  </div>
- <div class="creds">
-  <div class="cred"><svg viewBox="0 0 26 26"><path d="M2 9l11-5 11 5-11 5z"/><path d="M6 11v6c4 3 10 3 14 0v-6"/></svg><div><b>MSc Climate Change and Development</b><span>Vietnam Japan University, Hanoi · 2023–2025</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><circle cx="13" cy="6" r="3"/><path d="M13 9v14M5 15c0 5 4 8 8 8s8-3 8-8M8 13h10"/></svg><div><b>BSc Nautical Science, High Honors</b><span>Myanmar Maritime University · 2007–2012</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><path d="M13 2l9 4v6c0 6-4 10-9 12-5-2-9-6-9-12V6z"/><path d="M9 13l3 3 5-6"/></svg><div><b>QMS ISO 9001:2015 Internal Auditor</b><span>Bureau Veritas, Thailand · 2019</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><path d="M5 21C4 11 10 4 22 3c1 12-5 18-15 18"/><path d="M5 21l10-10"/></svg><div><b>ISO 14067 Carbon Footprint of Products</b><span>Alison, Ireland · online course</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><path d="M2 9l11-5 11 5-11 5z"/><path d="M6 11v6c4 3 10 3 14 0v-6"/></svg><div><b>Diploma in Human Resources Management</b><span>Alison · 2017–2018</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><circle cx="13" cy="13" r="10"/><path d="M3 13h20M13 3c3 3 4 6 4 10s-1 7-4 10c-3-3-4-6-4-10s1-7 4-10z"/></svg><div><b>Languages</b><span>Myanmar (native) · English (C2, professional)</span></div></div>
-  <div class="cred"><svg viewBox="0 0 26 26"><path d="M13 24s8-7 8-13a8 8 0 0 0-16 0c0 6 8 13 8 13z"/><circle cx="13" cy="11" r="3"/></svg><div><b>Based in Bangkok, Thailand</b><span>Working across Thailand, Myanmar, Vietnam and ASEAN</span></div></div>
+</section>
+
+<section class="band" id="experience">
+ <div class="wrap">
+  <div class="eyebrow rv">04 / Experience</div>
+  <h2 class="rv"><span class="t1">From the bridge</span><span class="t2">to the boardroom.</span></h2>
+  <div class="route" id="route"><div class="track"></div><div class="fill" id="fill"></div>
+    <div class="stop rv"><div class="yr">Nov 2026 – Now</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">Nov 2026 – Now</div><h3>ESG & Circular Economy Consultant</h3><span class="org">Independent</span><p>Advisory on ESG strategy and reporting, EPR readiness, GHG inventories, waste audits, and grant and proposal development.</p></div></div>
+    <div class="stop rv"><div class="yr">2022 – 2026</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2022 – 2026</div><h3>Business Development Director / Technical Lead Advisor</h3><span class="org">RecyGlo · Thailand · Vietnam · Myanmar · Singapore · Malaysia</span><p>Led regional business development, partnerships and sustainability consulting for corporate, SME, development-sector and education clients. Designed and sold services across waste audits, ESG advisory, EPR, GHG accounting, secure destruction and sustainability software, and managed multi-country delivery teams from proposal to final report.</p></div></div>
+    <div class="stop rv"><div class="yr">2021 – 2022</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2021 – 2022</div><h3>Head of Operations / Internal ISO Quality Auditor</h3><span class="org">RecyGlo · Regional</span><p>Ran operations, vendor coordination and KPIs across markets. Maintained the quality management system and led ISO 9001:2015 internal audits and corrective actions.</p></div></div>
+    <div class="stop rv"><div class="yr">2018 – 2022</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2018 – 2022</div><h3>Senior Business Development Manager</h3><span class="org">RecyGlo · Singapore · Myanmar</span><p>Managed key accounts and pipelines for environmental services and digital solutions. Wrote RFI, RFP and RFQ responses, pricing and business cases, and assessed new services and markets.</p></div></div>
+    <div class="stop rv"><div class="yr">2017 – 2018</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2017 – 2018</div><h3>General Manager</h3><span class="org">Myanmar Energetic Development · Yangon, Myanmar</span><p>Oversaw operations, team, business planning, budgets, vendor negotiation and customer development.</p></div></div>
+    <div class="stop rv"><div class="yr">2015 – 2017</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2015 – 2017</div><h3>Administrator &amp; Human Resources Manager</h3><span class="org">Myanmar Energetic Development · Yangon, Myanmar</span><p>Recruitment, training, performance management, HR policy and staff development.</p></div></div>
+    <div class="stop rv"><div class="yr">2012 – 2015</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2012 – 2015</div><h3>Distribution Manager</h3><span class="org">Impact Co., Ltd · Taunggyi, Myanmar</span><p>Distribution operations, route planning, logistics partners and channel development.</p></div></div>
+    <div class="stop rv"><div class="yr">2011 – 2012</div><div class="node"><i></i></div>
+     <div class="sc"><div class="myr">2011 – 2012</div><h3>Assistant Deck Officer</h3><span class="org">Sunship Schiffahrtskontor KG · Emden, Germany · international</span><p>Navigation, deck operations, safety procedures and regulatory compliance at sea.</p></div></div>
+  </div>
  </div>
-</div></section>
+</section>
 
-<section class="band" id="experience"><div class="wrap">
- <div class="label">Experience</div>
- <h2>From the bridge of a ship to the boardroom</h2>
- <p class="sub">Fifteen years across shipping, operations, people management and sustainability business development.</p>
- <ol class="career">
-  <li><time>2022 – 2026</time><div><h3>Business Development Director / ESG &amp; Business Sustainability Consultant</h3><div class="org"><b>RecyGlo</b> · Thailand · Vietnam · Myanmar · Singapore · Malaysia</div><p>Led regional business development, partnerships and sustainability consulting for corporate, SME, development-sector and education clients. Designed and sold services across waste audits, ESG advisory, EPR, GHG accounting, secure destruction and sustainability software, and managed multi-country delivery teams from proposal to final report.</p></div></li>
-  <li><time>2021 – 2022</time><div><h3>Head of Operations / Internal ISO Quality Auditor</h3><div class="org"><b>RecyGlo</b> · Regional</div><p>Ran operations, vendor coordination and KPIs across markets. Maintained the quality management system and led ISO 9001:2015 internal audits and corrective actions.</p></div></li>
-  <li><time>2018 – 2022</time><div><h3>Senior Business Development Manager</h3><div class="org"><b>RecyGlo</b> · Singapore · Myanmar</div><p>Managed key accounts and pipelines for environmental services and digital solutions. Wrote RFI, RFP and RFQ responses, pricing and business cases, and assessed new services and markets.</p></div></li>
-  <li><time>2017 – 2018</time><div><h3>General Manager</h3><div class="org"><b>Myanmar Energetic Development</b> · Yangon, Myanmar</div><p>Oversaw operations, team, business planning, budgets, vendor negotiation and customer development.</p></div></li>
-  <li><time>2015 – 2017</time><div><h3>Administrator &amp; Human Resources Manager</h3><div class="org"><b>Myanmar Energetic Development</b> · Yangon, Myanmar</div><p>Recruitment, training, performance management, HR policy and staff development.</p></div></li>
-  <li><time>2012 – 2015</time><div><h3>Distribution Manager</h3><div class="org"><b>Impact Co., Ltd</b> · Taunggyi, Myanmar</div><p>Distribution operations, route planning, logistics partners and channel development.</p></div></li>
-  <li><time>2011 – 2012</time><div><h3>Assistant Deck Officer</h3><div class="org"><b>Sunship Schiffahrtskontor KG</b> · Emden, Germany · international</div><p>Navigation, deck operations, safety procedures and regulatory compliance at sea.</p></div></li>
- </ol>
-</div></section>
-
-<section class="band" id="projects"><div class="wrap">
- <div class="label">Projects</div>
- <h2>Selected projects and delivery, 2018–2026</h2>
- <p class="sub">Direct delivery, solution architecture and engagements still in development, each marked for what it is.</p>
- <div class="filters" role="group" aria-label="Filter projects"><button type="button" class="f on" data-f="all" aria-pressed="true">All <i>17</i></button><button type="button" class="f" data-f="audits" aria-pressed="false">Waste audits <i>3</i></button><button type="button" class="f" data-f="digital" aria-pressed="false">Digital EPR & GHG <i>3</i></button><button type="button" class="f" data-f="programs" aria-pressed="false">Development & circularity <i>4</i></button><button type="button" class="f" data-f="advisory" aria-pressed="false">Corporate ESG <i>4</i></button><button type="button" class="f" data-f="research" aria-pressed="false">Research & nature-based <i>3</i></button></div>
- <div class="pgrid" id="pgrid">
-   <article class="pcard" data-cat="audits"><div class="ptop"><span class="client">Starbucks Thailand</span><span class="yrs">2025</span></div><h3>Multi-store waste audit</h3><div class="prole">Project lead · waste characterisation and recommendations</div><p>Led a five-store assessment in Bangkok covering waste composition, contamination, recycling performance and opportunities for better segregation and diversion.</p></article>
-   <article class="pcard" data-cat="audits"><div class="ptop"><span class="client">Cobra International</span><span class="yrs">2025–2026</span></div><h3>Resin and paint material audits</h3><div class="prole">Audit design, field coordination, material-flow controls, reporting</div><p>Directed assessments across production buildings and a spray room, reconciling standard against actual material use, waste and quality deviations. Built inventory-to-application monitoring logic and recommended process-control improvements.</p></article>
-   <article class="pcard" data-cat="audits"><div class="ptop"><span class="client">INSEE Ecocycle</span><span class="yrs">2026</span></div><h3>Industrial waste pilot</h3><div class="prole">Technical pilot documentation and commercial coordination</div><p>Supported the industrial waste pilot and submitted technical documentation and willingness-to-pay validation guidance.</p><span class="st done">Pilot completed</span></article>
-   <article class="pcard" data-cat="digital"><div class="ptop"><span class="client">Second Life / Royce</span><span class="yrs">2026</span></div><h3>Blockchain-enabled recycling traceability</h3><div class="prole">Solution originator · process and data architecture · technical advisor</div><p>Designed the framework for collector-to-processor-to-manufacturer traceability: waste manifests, QR handshakes, material transformation, mass-balance logic, product passports and recycling evidence.</p><span class="st live">Platform in use; independent MRV pending</span></article>
-   <article class="pcard" data-cat="digital"><div class="ptop"><span class="client">Wongpanit Head Office</span><span class="yrs">2025–2026</span></div><h3>EPR, ESG and GHG reporting platform</h3><div class="prole">Initiated and negotiated the partnership · platform concept and coordination</div><p>A collaborative digital approach covering waste traceability, evidence documents, supply-chain GHG calculations and GHG accounting, with training for franchise and operational teams.</p><span class="st live">Platform deployed; pilot pending</span></article>
-   <article class="pcard" data-cat="digital"><div class="ptop"><span class="client">Sanaterra</span><span class="yrs">2025–2026</span></div><h3>Corporate carbon accounting platform</h3><div class="prole">Technical consultant · product methodology and business development</div><p>Supported development and commercialisation of a digital carbon-accounting solution aligned with GHG Protocol Scope 1, 2 and 3 and ISO 14064 principles.</p></article>
-   <article class="pcard" data-cat="programs"><div class="ptop"><span class="client">Mercy Corps · Sein Lan</span><span class="yrs">2026 · Myanmar</span></div><h3>Circular feed and livestock monitoring</h3><div class="prole">M&amp;E technical advisor · survey and data architecture</div><p>Reviewed smallholder livestock survey systems, corrected the feed conversion ratio method to use weight gain, improved batch and sales traceability, and set out a path to future GHG and LCA measurement.</p></article>
-   <article class="pcard" data-cat="programs"><div class="ptop"><span class="client">ASEAN Foundation / Maybank</span><span class="yrs">2025–2026 · Thailand</span></div><h3>eYAA5 and eYAA6 youth programmes</h3><div class="prole">Programme leadership and partner coordination</div><p>Youth-centred circular economy activities, school recycling and segregation campaigns, monitoring, and a fairer per-capita recycling competition method.</p></article>
-   <article class="pcard" data-cat="programs"><div class="ptop"><span class="client">Project Closed Loop</span><span class="yrs">2026</span></div><h3>School recycling and impact reporting</h3><div class="prole">Programme coordination and impact monitoring</div><p>Beneficiary evidence, gender-disaggregated school statements, programme reporting and close-out documentation.</p></article>
-   <article class="pcard" data-cat="programs"><div class="ptop"><span class="client">Tetra Pak Vietnam</span><span class="yrs">2025–2026</span></div><h3>Used beverage carton recovery</h3><div class="prole">Consulting, supply-chain engagement and feasibility</div><p>Collection and recycling feasibility, aggregator and downstream buyer verification, and stakeholder coordination for carton recovery.</p></article>
-   <article class="pcard" data-cat="advisory"><div class="ptop"><span class="client">TMH</span><span class="yrs">2024–2025</span></div><h3>Organisational GHG inventory</h3><div class="prole">GHG assessment and reporting support</div><p>Greenhouse-gas accounting for organisational emissions, focused on activity data, inventory structure and decision-ready management reporting.</p></article>
-   <article class="pcard" data-cat="advisory"><div class="ptop"><span class="client">HEINEKEN Myanmar</span><span class="yrs">2026</span></div><h3>Circular waste and resource recovery</h3><div class="prole">Sustainability project and business development coordination</div><p>Waste segregation and reporting, employee engagement, and assessment of brewery by-products such as spent yeast and wastewater sludge for resource recovery.</p><span class="st wip">Scope in progress</span></article>
-   <article class="pcard" data-cat="advisory"><div class="ptop"><span class="client">DKT Myanmar</span><span class="yrs">2026</span></div><h3>Environmental and social management reporting</h3><div class="prole">ESMP reporting and environmental performance documentation</div><p>Environmental and social management documentation, training evidence and reporting for development-partner requirements.</p></article>
-   <article class="pcard" data-cat="advisory"><div class="ptop"><span class="client">ACHIEVE-SEA</span><span class="yrs">2026</span></div><h3>Regional health-system innovation</h3><div class="prole">Consortium coordination and technical proposal development</div><p>Regional partner coordination and planning for technology-enabled health-system capacity building, localisation and evidence generation.</p><span class="st plan">Proposal stage</span></article>
-   <article class="pcard" data-cat="research"><div class="ptop"><span class="client">Vietnam Japan University</span><span class="yrs">2024–2025</span></div><h3>Mangrove blue carbon research, Tien Lang, Hai Phong</h3><div class="prole">Lead researcher</div><p>Field biomass and soil-carbon assessment across 15 plots combining allometry, LOI–TOC analysis and remote sensing. Estimated mean ecosystem carbon stock of 87.42 tC/ha; published in Applied Environmental Research (2026).</p><span class="st done">Completed</span></article>
-   <article class="pcard" data-cat="research"><div class="ptop"><span class="client">RecyGlo Vietnam</span></div><h3>Partnerships, public-sector engagement and UBC consulting</h3><div class="prole">Country-level business development and stakeholder coordination</div><p>Government-facing collaboration, international development engagement and corporate sustainability opportunities, including Tetra Pak-related work.</p></article>
-   <article class="pcard" data-cat="research"><div class="ptop"><span class="client">Myanmar climate proposal</span><span class="yrs">2026</span></div><h3>Integrated mangrove and household biogas concept</h3><div class="prole">Concept development and funding proposal support</div><p>Links nature-based adaptation, waste-to-energy and rural livelihoods in one programme design.</p><span class="st plan">Proposal stage</span></article>
+<section class="band" id="research">
+ <div class="wrap">
+  <div class="eyebrow rv">05 / Research</div>
+  <h2 class="rv"><span class="t1">Peer-reviewed.</span><span class="t2">Field-tested.</span></h2>
+  <article class="pub rv">
+   <div>
+    <div class="smeta"><b>AER //</b> APPLIED ENVIRONMENTAL RESEARCH · VOL. 48, NO. 2 · 2026 · FIRST AUTHOR</div>
+    <h3>Blue carbon stock assessment and climate resilience potential of mangrove forest in Hung Thang commune, Vietnam</h3>
+    <p class="au"><b>Hla Phong Ko</b>, Pham Hong Tinh, Nguyen Thuy Duong</p>
+    <p>Combines field inventory, soil organic carbon analysis and satellite-based vegetation models to measure carbon stored in Hai Phong's mangroves. Soil organic carbon made up about 19% of the total, and carbon stocks rose steadily from 1996 to 2024.</p>
+    <div class="ctas" style="margin-top:22px"><a class="btn solid" href="https://digital.car.chula.ac.th/aer/vol48/iss2/2/">Read the article <i>↗</i></a><a class="btn ghost" href="https://doi.org/10.35762/AER.2026012">DOI 10.35762/AER.2026012</a></div>
+   </div>
+   <div class="big"><b>87.42</b><span>tC/ha mean ecosystem carbon</span></div>
+  </article>
  </div>
- <h3 class="earlyh">Earlier projects, 2018–2023</h3>
- <ul class="early"><li><b>ENI</b><span>Rural waste management system set-up</span><em>Myanmar</em></li><li><b>Norwegian Retailers’ Environment Fund</b><span>Zero-plastic supply chain management</span><em>Myanmar</em></li><li><b>Inle horse project</b><span>Biogas production</span><em>Myanmar</em></li><li><b>Öko-Institut / KfW</b><span>Solar panel installation</span><em>Germany</em></li><li><b>Danish Embassy Responsible Business Fund</b><span>Low-value plastic recycling</span><em>Myanmar</em></li><li><b>ADB</b><span>Landfill management</span><em>Myanmar</em></li><li><b>Inle Rose</b><span>Landfill management, Shan State</span><em>Myanmar</em></li><li><b>Used cooking oil</b><span>Used cooking oil to biodiesel</span><em>Singapore · Malaysia</em></li><li><b>Yoma Micro Power</b><span>Engine oil recycling</span><em>Myanmar</em></li><li><b>Ngwe Saung Yacht Club</b><span>Landfill management audit</span><em>Myanmar</em></li><li><b>Maha Limited</b><span>Carbon footprint audit and reporting</span><em>Myanmar</em></li><li><b>Coca-Cola</b><span>Bin set-up and landfill management</span><em>Myanmar</em></li><li><b>USAID WE4F</b><span>Circular economy in agricultural products and services</span><em>Thailand · Vietnam</em></li><li><b>K-Startup programme</b><span>ESG reporting and waste management platform services</span><em>Korea</em></li></ul>
-</div></section>
+</section>
 
-<section class="band pubs" id="publications"><div class="wrap">
- <div class="label">Publications</div>
- <h2>Peer-reviewed research</h2>
- <article class="pub">
-  <div class="pmeta"><span>Applied Environmental Research · Vol. 48, No. 2 · 2026</span><span class="lead-au">First author</span></div>
-  <h3><a href="https://digital.car.chula.ac.th/aer/vol48/iss2/2/">Blue carbon stock assessment and climate resilience potential of mangrove forest in Hung Thang commune, Vietnam</a></h3>
-  <p class="au"><b>Hla Phong Ko</b>, Pham Hong Tinh, Nguyen Thuy Duong</p>
-  <p>Combines field inventory, soil organic carbon analysis and satellite-based vegetation models to measure carbon stored in mangroves in Hai Phong Province. Mangroves held an average of 87.42 tC/ha, with soil organic carbon about 19% of the total, and carbon stocks rose steadily from 1996 to 2024.</p>
-  <div class="plinks"><a class="btn sm" href="https://digital.car.chula.ac.th/aer/vol48/iss2/2/">Read the article <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a><a class="doi" href="https://doi.org/10.35762/AER.2026012">DOI 10.35762/AER.2026012</a></div>
- </article>
-</div></section>
-
-<section class="band speaking" id="speaking"><div class="wrap">
- <div class="label">Speaking &amp; partnerships</div>
- <h2>From EPR to Net Zero: industry-facing dialogue</h2>
- <p class="sub">Talks, partnerships, training and fieldwork across Thailand, Vietnam and ASEAN. Tap any card for the full photo set.</p>
- <div class="ggrid">
-   <article class="gcard"><button type="button" class="gopen" data-ev="0" aria-label="View photos: AIT Decarbonization Nexus 2025"><figure><img src="assets/g/ait-podium.jpg" alt="Speaking at the Asian Institute of Technology podium" loading="lazy"><span class="kind">Speaking</span><span class="more">5 photos</span></figure></button><div><span class="when">11 September 2025</span><h3>AIT Decarbonization Nexus 2025</h3><p>Guest speaker at the Asian Institute of Technology. Inspired Startup Challenge participants on commercial opportunities in sustainability and presented on auditable ESG and GHG data with blockchain-enabled reporting.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="1" aria-label="View photos: TGO Forum & TCNN Conference"><figure><img src="assets/g/tgo-talk.jpg" alt="Speaking at the TGO Forum and TCNN Conference" loading="lazy"><span class="kind">Speaking</span><span class="more">3 photos</span></figure></button><div><span class="when">3 December 2025 · Bangkok</span><h3>TGO Forum &amp; TCNN Conference</h3><p>Invited talk: “From EPR to Net Zero: Carbon Footprint Reporting for Downstream Waste Disposal and Recycling in Thailand,” including a live walkthrough of an EPR waste reporting platform.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="2" aria-label="View photos: World Environment Day 2025 panel"><figure><img src="assets/g/wed-panel.jpg" alt="Speaking on the World Environment Day 2025 panel in Phitsanulok" loading="lazy"><span class="kind">Speaking</span></figure></button><div><span class="when">2025 · Phitsanulok</span><h3>World Environment Day 2025 panel</h3><p>Panellist at Phitsanulok’s World Environment Day 2025 forum on the province’s BCG model and community waste management.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="3" aria-label="View photos: SEA DREAM research network"><figure><img src="assets/g/seadream.jpg" alt="With fellow participants at a SEA DREAM gathering" loading="lazy"><span class="kind">Network</span></figure></button><div><span class="when">Bangkok</span><h3>SEA DREAM research network</h3><p>Joined SEA DREAM (Developing Research Excellence and Mentorship in Southeast Asia), a regional network linking researchers and practitioners.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="4" aria-label="View photos: MOU with Wongpanit Head Office"><figure><img src="assets/g/mou.jpg" alt="MOU signing ceremony with Wongpanit Head Office" loading="lazy"><span class="kind">Partnership</span></figure></button><div><span class="when">November 2025</span><h3>MOU with Wongpanit Head Office</h3><p>Initiated and negotiated a partnership with Dr. Som Thai and Wongpanit management for EPR, ESG and GHG platform collaboration.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="5" aria-label="View photos: Tripartite Thai SME agreement"><figure><img src="assets/g/tripartite.jpg" alt="Signatories of the tripartite agreement" loading="lazy"><span class="kind">Partnership</span></figure></button><div><span class="when">2025</span><h3>Tripartite Thai SME agreement</h3><p>A tripartite MOU with the Thai Accounting Firms Association (TAFA) and the Federation of Thai SMEs to support sustainability reporting and access to green financing.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="6" aria-label="View photos: Recycler training, Wongpanit"><figure><img src="assets/g/wpn-talk.jpg" alt="Explaining industry pain points to recyclers" loading="lazy"><span class="kind">Training</span><span class="more">4 photos</span></figure></button><div><span class="when">Industry training</span><h3>Recycler training, Wongpanit</h3><p>EPR-focused training for recyclers at Wongpanit Training Center on the gaps holding the industry back: fragmented data, manual systems, no standardised MRV and no auditable chain of custody.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="7" aria-label="View photos: Invited EPR training, JLL"><figure><img src="assets/g/jll-talk.jpg" alt="Delivering EPR training at JLL" loading="lazy"><span class="kind">Training</span><span class="more">2 photos</span></figure></button><div><span class="when">July 2026</span><h3>Invited EPR training, JLL</h3><p>EPR training for real estate and construction companies and their suppliers: waste stewardship, recycling practice and supply-chain sustainability.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="8" aria-label="View photos: Maybank eMpowering Youths with ASEAN Foundation"><figure><img src="assets/g/eyaa-stage.jpg" alt="Presenting on stage at an eYAA programme event" loading="lazy"><span class="kind">Programme</span><span class="more">2 photos</span></figure></button><div><span class="when">2025–2026 · Thailand</span><h3>Maybank eMpowering Youths with ASEAN Foundation</h3><p>School recycling and segregation campaigns and youth circular-economy activities under the eYAA programmes.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="9" aria-label="View photos: Project Closed Loop"><figure><img src="assets/g/closed-loop.jpg" alt="With programme partners at a Project Closed Loop event" loading="lazy"><span class="kind">Programme</span></figure></button><div><span class="when">2026 · Bangkok</span><h3>Project Closed Loop</h3><p>A school and community programme turning plastic waste into learning, action and recycled products, with impact reporting and close-out documentation.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="10" aria-label="View photos: Upcycling workshop"><figure><img src="assets/g/workshop.jpg" alt="Joining a fishing-net upcycling workshop" loading="lazy"><span class="kind">Community</span></figure></button><div><span class="when">Southern Thailand</span><h3>Upcycling workshop</h3><p>Hands-on upcycling of used fishing nets into bags with students and residents at a community environment fair.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="11" aria-label="View photos: Recycling facility visits"><figure><img src="assets/g/visit-plastic.jpg" alt="Inspecting recycled plastic flakes at a recycling plant" loading="lazy"><span class="kind">Field visits</span><span class="more">3 photos</span></figure></button><div><span class="when">Thailand</span><h3>Recycling facility visits</h3><p>Site visits to plastic, glass and metal recycling plants with industry partners to map recovery processes and downstream capacity.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="12" aria-label="View photos: Mangrove blue carbon lab work"><figure><img src="assets/g/lab-1.jpg" alt="Preparing mangrove soil samples in the lab" loading="lazy"><span class="kind">Research</span><span class="more">2 photos</span></figure></button><div><span class="when">2024–2025 · Hanoi</span><h3>Mangrove blue carbon lab work</h3><p>Soil organic carbon analysis for my master’s research at Vietnam Japan University, which estimated 87.42 tC/ha in Tien Lang mangroves.</p></div></article>
-   <article class="gcard"><button type="button" class="gopen" data-ev="13" aria-label="View photos: Digital sustainability platforms"><figure><img src="assets/g/platform-demo.jpg" alt="Walking partners through an EPR intelligence dashboard" loading="lazy"><span class="kind">Platforms</span><span class="more">2 photos</span></figure></button><div><span class="when">Bangkok</span><h3>Digital sustainability platforms</h3><p>Demonstrating GHG accounting, ESG reporting and EPR platforms to partners and visitors, including an EPR intelligence dashboard and a live carbon-footprint calculator.</p></div></article>
- </div>
- <div class="trainbox">
-  <h3>Training and facilitation</h3>
-  <ul>
-   <li>ESG, materiality analysis and sustainability reporting for corporate clients and SMEs</li>
-   <li>Carbon footprint auditing and management training for universities and businesses</li>
+<section class="band" id="speaking">
+ <div class="glow" style="width:34rem;height:34rem;right:15%;top:20%;background:rgba(212,175,55,.05)"></div>
+ <div class="wrap">
+  <div class="eyebrow rv">06 / Speaking &amp; partnerships</div>
+  <h2 class="rv"><span class="t1">From EPR</span><span class="t2">to Net Zero.</span></h2>
+  <div class="ggrid">
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="0" aria-label="View photos: AIT Decarbonization Nexus 2025"><figure><img src="assets/g/ait-podium.jpg" alt="Speaking at the Asian Institute of Technology podium" loading="lazy"><span class="kind">SPEAKING</span><span class="more">5 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">11 September 2025</span><h3>AIT Decarbonization Nexus 2025</h3><p>Guest speaker at the Asian Institute of Technology. Inspired Startup Challenge participants on commercial opportunities in sustainability and presented on auditable ESG and GHG data with blockchain-enabled reporting.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="1" aria-label="View photos: TGO Forum &amp; TCNN Conference"><figure><img src="assets/g/tgo-talk.jpg" alt="Speaking at the TGO Forum and TCNN Conference" loading="lazy"><span class="kind">SPEAKING</span><span class="more">3 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">3 December 2025 · Bangkok</span><h3>TGO Forum &amp; TCNN Conference</h3><p>Invited talk: “From EPR to Net Zero: Carbon Footprint Reporting for Downstream Waste Disposal and Recycling in Thailand,” including a live walkthrough of an EPR waste reporting platform.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="2" aria-label="View photos: World Environment Day 2025 panel"><figure><img src="assets/g/wed-panel.jpg" alt="Speaking on the World Environment Day 2025 panel in Phitsanulok" loading="lazy"><span class="kind">SPEAKING</span></figure></button>
+    <div class="gtxt"><span class="when">2025 · Phitsanulok</span><h3>World Environment Day 2025 panel</h3><p>Panellist at Phitsanulok’s World Environment Day 2025 forum on the province’s BCG model and community waste management.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="3" aria-label="View photos: SEA DREAM research network"><figure><img src="assets/g/seadream.jpg" alt="With fellow participants at a SEA DREAM gathering" loading="lazy"><span class="kind">NETWORK</span></figure></button>
+    <div class="gtxt"><span class="when">Bangkok</span><h3>SEA DREAM research network</h3><p>Joined SEA DREAM (Developing Research Excellence and Mentorship in Southeast Asia), a regional network linking researchers and practitioners.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="4" aria-label="View photos: MOU with Wongpanit Head Office"><figure><img src="assets/g/mou.jpg" alt="MOU signing ceremony with Wongpanit Head Office" loading="lazy"><span class="kind">PARTNERSHIP</span></figure></button>
+    <div class="gtxt"><span class="when">November 2025</span><h3>MOU with Wongpanit Head Office</h3><p>Initiated and negotiated a partnership with Dr. Som Thai and Wongpanit management for EPR, ESG and GHG platform collaboration.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="5" aria-label="View photos: Tripartite Thai SME agreement"><figure><img src="assets/g/tripartite.jpg" alt="Signatories of the tripartite agreement" loading="lazy"><span class="kind">PARTNERSHIP</span></figure></button>
+    <div class="gtxt"><span class="when">2025</span><h3>Tripartite Thai SME agreement</h3><p>A tripartite MOU with the Thai Accounting Firms Association (TAFA) and the Federation of Thai SMEs to support sustainability reporting and access to green financing.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="6" aria-label="View photos: Recycler training, Wongpanit"><figure><img src="assets/g/wpn-talk.jpg" alt="Explaining industry pain points to recyclers" loading="lazy"><span class="kind">TRAINING</span><span class="more">4 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">Industry training</span><h3>Recycler training, Wongpanit</h3><p>EPR-focused training for recyclers at Wongpanit Training Center on the gaps holding the industry back: fragmented data, manual systems, no standardised MRV and no auditable chain of custody.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="7" aria-label="View photos: Invited EPR training, JLL"><figure><img src="assets/g/jll-talk.jpg" alt="Delivering EPR training at JLL" loading="lazy"><span class="kind">TRAINING</span><span class="more">2 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">July 2026</span><h3>Invited EPR training, JLL</h3><p>EPR training for real estate and construction companies and their suppliers: waste stewardship, recycling practice and supply-chain sustainability.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="8" aria-label="View photos: Maybank eMpowering Youths with ASEAN Foundation"><figure><img src="assets/g/eyaa-stage.jpg" alt="Presenting on stage at an eYAA programme event" loading="lazy"><span class="kind">PROGRAMME</span><span class="more">2 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">2025–2026 · Thailand</span><h3>Maybank eMpowering Youths with ASEAN Foundation</h3><p>School recycling and segregation campaigns and youth circular-economy activities under the eYAA programmes.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="9" aria-label="View photos: Project Closed Loop"><figure><img src="assets/g/closed-loop.jpg" alt="With programme partners at a Project Closed Loop event" loading="lazy"><span class="kind">PROGRAMME</span></figure></button>
+    <div class="gtxt"><span class="when">2026 · Bangkok</span><h3>Project Closed Loop</h3><p>A school and community programme turning plastic waste into learning, action and recycled products, with impact reporting and close-out documentation.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="10" aria-label="View photos: Upcycling workshop"><figure><img src="assets/g/workshop.jpg" alt="Joining a fishing-net upcycling workshop" loading="lazy"><span class="kind">COMMUNITY</span></figure></button>
+    <div class="gtxt"><span class="when">Southern Thailand</span><h3>Upcycling workshop</h3><p>Hands-on upcycling of used fishing nets into bags with students and residents at a community environment fair.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="11" aria-label="View photos: Recycling facility visits"><figure><img src="assets/g/visit-plastic.jpg" alt="Inspecting recycled plastic flakes at a recycling plant" loading="lazy"><span class="kind">FIELD VISITS</span><span class="more">3 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">Thailand</span><h3>Recycling facility visits</h3><p>Site visits to plastic, glass and metal recycling plants with industry partners to map recovery processes and downstream capacity.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="12" aria-label="View photos: Mangrove blue carbon lab work"><figure><img src="assets/g/lab-1.jpg" alt="Preparing mangrove soil samples in the lab" loading="lazy"><span class="kind">RESEARCH</span><span class="more">2 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">2024–2025 · Hanoi</span><h3>Mangrove blue carbon lab work</h3><p>Soil organic carbon analysis for my master’s research at Vietnam Japan University, which estimated 87.42 tC/ha in Tien Lang mangroves.</p></div></article>
+   <article class="gcard rv"><button type="button" class="gopen" data-ev="13" aria-label="View photos: Digital sustainability platforms"><figure><img src="assets/g/platform-demo.jpg" alt="Walking partners through an EPR intelligence dashboard" loading="lazy"><span class="kind">PLATFORMS</span><span class="more">2 PHOTOS</span></figure></button>
+    <div class="gtxt"><span class="when">Bangkok</span><h3>Digital sustainability platforms</h3><p>Demonstrating GHG accounting, ESG reporting and EPR platforms to partners and visitors, including an EPR intelligence dashboard and a live carbon-footprint calculator.</p></div></article>
+  </div>
+  <div class="trainbox rv"><h3>Training &amp; facilitation</h3><ul>
+   <li>ESG, materiality and sustainability reporting for corporate clients and SMEs</li>
+   <li>Carbon footprint auditing and management for universities and businesses</li>
    <li>Waste awareness, circular economy and recycling programmes for schools, embassies, NGOs and companies</li>
-   <li>Green-school and recycling campaigns for international schools and student communities</li>
-   <li>Circular economy and responsible-business awareness with chambers of commerce and partners</li>
-  </ul>
+   <li>Green-school and recycling campaigns for international schools</li>
+   <li>Circular economy and responsible-business awareness with chambers of commerce</li></ul></div>
  </div>
-</div></section>
+</section>
 
-<section class="band" id="insights"><div class="wrap">
- <div class="label">Insights</div>
- <h2>Perspectives on sustainability as business</h2>
- <div class="cards">
-  <article class="card"><div class="k">EPR</div><h3>EPR is a supply-chain project, not a compliance form</h3><p>Producers that map packaging flows and lock in recycler partnerships early turn EPR fees into recovered value.</p></article>
-  <article class="card"><div class="k">GHG accounting</div><h3>Good carbon data starts at the waste bin</h3><p>Waste audits give companies hard activity data for Scope 3 and expose losses that cost money today.</p></article>
-  <article class="card"><div class="k">Digital MRV</div><h3>Traceability builds trust</h3><p>Digital tracking of materials and emissions lets buyers, regulators and investors verify claims instead of taking them on faith.</p></article>
+<section class="band" id="insights">
+ <div class="wrap">
+  <div class="eyebrow rv">07 / Insights</div>
+  <h2 class="rv"><span class="t1">How I think about</span><span class="t2">sustainability as business.</span></h2>
+  <div class="cards">
+   <article class="icard rv"><span class="k">EPR</span><h3>EPR is a supply-chain project, not a compliance form</h3><p>Producers that map packaging flows and lock in recycler partnerships early turn EPR fees into recovered value.</p></article>
+   <article class="icard rv"><span class="k">GHG ACCOUNTING</span><h3>Good carbon data starts at the waste bin</h3><p>Waste audits give companies hard activity data for Scope 3 and expose losses that cost money today.</p></article>
+   <article class="icard rv"><span class="k">DIGITAL MRV</span><h3>Traceability builds trust</h3><p>Digital tracking of materials and emissions lets buyers, regulators and investors verify claims instead of taking them on faith.</p></article>
+  </div>
  </div>
-</div></section>
+</section>
 
-<section class="band contact" id="contact"><div class="wrap"><div class="box">
- <div>
-  <div class="label">Contact</div>
-  <h2>Working on EPR, ESG or a circular-economy partnership?</h2>
-  <p style="margin-top:14px">Get in touch to discuss audits, reporting, partnerships or speaking.</p>
-  <ul class="addr">
-   <li><span>Email</span><a href="mailto:hlaphongko017@gmail.com">hlaphongko017@gmail.com</a></li>
-   <li><span>Thailand</span><a href="tel:+66984841347">+66 98 484 1347</a></li>
-   <li><span>Myanmar</span><a href="tel:+959253337744">+95 9 253 337 744</a></li>
-  </ul>
+<section class="band contact" id="contact">
+ <div class="glow" style="width:40rem;height:40rem;left:50%;top:40%;transform:translate(-50%,-50%);background:rgba(212,175,55,.1)"></div>
+ <div class="wrap">
+  <div class="eyebrow rv" style="justify-content:center">08 / Contact</div>
+  <h2 class="rv"><span class="t1">Let's build</span><span class="t2">what's next.</span></h2>
+  <p class="lede rv">Working on EPR, ESG reporting, carbon accounting or a circular-economy partnership? I'd be glad to talk.</p>
+  <div class="ctas rv" style="justify-content:center"><a class="btn" href="mailto:hlaphongko017@gmail.com">Email me <i>↗</i></a><a class="btn ghost" href="Hla_Phong_Ko_CV_2026.pdf" download>Download CV <i>↓</i></a></div>
+  <div class="clist rv">
+   <a href="mailto:hlaphongko017@gmail.com"><span>Email</span>hlaphongko017@gmail.com</a>
+   <a href="tel:+66984841347"><span>Thailand</span>+66 98 484 1347</a>
+   <a href="tel:+959253337744"><span>Myanmar</span>+95 9 253 337 744</a>
+  </div>
+  <div class="sig rv" style="margin-top:40px;font-size:54px">Hla Phong Ko</div>
  </div>
- <a class="btn" href="mailto:hlaphongko017@gmail.com">Email me <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 10h13M11 5l5 5-5 5"/></svg></a>
-</div></div></section>
+</section>
 </main>
+<footer><span>© 2026 Hla Phong Ko</span><span>ESG &amp; Circular Economy Consultant · Bangkok</span></footer>
 
-<footer><div class="wrap"><span>© 2026 Hla Phong Ko</span><span>ESG &amp; Circular Economy Consultant · Bangkok</span></div></footer>
-
-
-<dialog id="lb" aria-label="Photo viewer">
- <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
- <button type="button" class="lbb lbx" id="lbX" aria-label="Close">✕</button>
- <button type="button" class="lbb lbp" id="lbP" aria-label="Previous photo">‹</button>
- <button type="button" class="lbb lbn" id="lbN" aria-label="Next photo">›</button>
-</dialog>
+<dialog id="lb" aria-label="Photo viewer"><figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+ <button type="button" class="lbb lbx" id="lbX" aria-label="Close">✕</button><button type="button" class="lbb lbp" id="lbP" aria-label="Previous photo">‹</button><button type="button" class="lbb lbn" id="lbN" aria-label="Next photo">›</button></dialog>
 <script>window.GAL=[[{"src": "assets/g/ait-podium.jpg", "cap": "Speaking at the Asian Institute of Technology podium"}, {"src": "assets/g/ait-talk-1.jpg", "cap": "Presenting to Startup Challenge participants"}, {"src": "assets/g/ait-talk-2.jpg", "cap": "Answering questions in the Creator Space session"}, {"src": "assets/g/ait-talk-3.jpg", "cap": "Leading the Startup Challenge session"}, {"src": "assets/g/ait-group.jpg", "cap": "Speakers and participants at Decarbonization Nexus 2025"}], [{"src": "assets/g/tgo-talk.jpg", "cap": "Speaking at the TGO Forum and TCNN Conference"}, {"src": "assets/g/tgo-platform.jpg", "cap": "Presenting an EPR waste platform dashboard"}, {"src": "assets/g/tgo-speaker.jpg", "cap": "At the TGO Forum with speaker badge"}], [{"src": "assets/g/wed-panel.jpg", "cap": "Speaking on the World Environment Day 2025 panel in Phitsanulok"}], [{"src": "assets/g/seadream.jpg", "cap": "With fellow participants at a SEA DREAM gathering"}], [{"src": "assets/g/mou.jpg", "cap": "MOU signing ceremony with Wongpanit Head Office"}], [{"src": "assets/g/tripartite.jpg", "cap": "Signatories of the tripartite agreement"}], [{"src": "assets/g/wpn-talk.jpg", "cap": "Explaining industry pain points to recyclers"}, {"src": "assets/g/wpn-training.jpg", "cap": "Presenting the gaps in Thailand’s recycling ecosystem"}, {"src": "assets/g/wpn-qa.jpg", "cap": "Joint Q&A with Wongpanit leadership"}, {"src": "assets/g/wpn-thanks.jpg", "cap": "Receiving a token of appreciation after the training"}], [{"src": "assets/g/jll-talk.jpg", "cap": "Delivering EPR training at JLL"}, {"src": "assets/g/jll-audience.jpg", "cap": "Audience at the JLL EPR session"}], [{"src": "assets/g/eyaa-stage.jpg", "cap": "Presenting on stage at an eYAA programme event"}, {"src": "assets/g/eyaa.jpg", "cap": "Programme team and school partners at a certificate handover"}], [{"src": "assets/g/closed-loop.jpg", "cap": "With programme partners at a Project Closed Loop event"}], [{"src": "assets/g/workshop.jpg", "cap": "Joining a fishing-net upcycling workshop"}], [{"src": "assets/g/visit-plastic.jpg", "cap": "Inspecting recycled plastic flakes at a recycling plant"}, {"src": "assets/g/visit-glass.jpg", "cap": "Visit to B.S. Glass Recycling"}, {"src": "assets/g/visit-metal.jpg", "cap": "Visit to a metal recycling plant"}], [{"src": "assets/g/lab-1.jpg", "cap": "Preparing mangrove soil samples in the lab"}, {"src": "assets/g/lab-2.jpg", "cap": "Weighing samples for carbon analysis"}], [{"src": "assets/g/platform-demo.jpg", "cap": "Walking partners through an EPR intelligence dashboard"}, {"src": "assets/g/booth.jpg", "cap": "At a digital sustainability platforms booth"}]];</script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
 <script>
 {
- /* mobile menu */
+ const still=matchMedia('(prefers-reduced-motion: reduce)').matches, fine=matchMedia('(pointer:fine)').matches;
+ /* smooth scroll */
+ let lenis=null;
+ try{if(!still&&window.Lenis){lenis=new Lenis({duration:1.2,easing:t=>Math.min(1,1.001-Math.pow(2,-10*t))});const raf=t=>{lenis.raf(t);requestAnimationFrame(raf)};requestAnimationFrame(raf);
+  document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id.length>1&&document.querySelector(id)){e.preventDefault();lenis.scrollTo(id,{offset:-60})}}))}}catch(e){}
+ /* cursor */
+ const cur=document.getElementById('cur');
+ if(fine&&!still){document.body.classList.add('hascur');
+  addEventListener('mousemove',e=>{cur.style.transform=`translate(${e.clientX}px,${e.clientY}px)`},{passive:true});
+  document.querySelectorAll('a,button,.pcard,.gcard').forEach(el=>{el.addEventListener('mouseenter',()=>cur.classList.add('big'));el.addEventListener('mouseleave',()=>cur.classList.remove('big'))})}
+ else cur.remove();
+ /* menu */
  const mb=document.getElementById('menuBtn'),lk=document.getElementById('links');
  mb.addEventListener('click',()=>{const o=lk.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
  lk.addEventListener('click',e=>{if(e.target.tagName==='A'){lk.classList.remove('open');mb.setAttribute('aria-expanded',false)}});
-
- /* active nav link */
+ /* reveal with stagger */
+ const groups=new Map();
+ document.querySelectorAll('.rv').forEach(el=>{const p=el.parentElement,n=groups.get(p)||0;groups.set(p,n+1);el.style.setProperty('--d',Math.min(n,6)*.09+'s')});
+ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+ /* active nav */
  const navA=[...lk.querySelectorAll('a')];
- const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){navA.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+en.target.id&&!a.classList.contains('pill')))}})},{rootMargin:'-45% 0px -50% 0px'});
- document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
-
-
- /* project filters */
- const fb=[...document.querySelectorAll('.f')],pc=[...document.querySelectorAll('.pcard')];
- fb.forEach(b=>b.addEventListener('click',()=>{const f=b.dataset.f;fb.forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});pc.forEach(c=>c.hidden=!(f==='all'||c.dataset.cat===f))}));
-
-
- /* gallery lightbox */
- const lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lc=document.getElementById('lbCap'),lp=document.getElementById('lbP'),ln=document.getElementById('lbN');
- let ge=0,gi=0;
+ const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)navA.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+ document.querySelectorAll('main section[id]').forEach(s=>so.observe(s));
+ /* 3D tilt portrait */
+ const tilt=document.getElementById('tilt'),spot=document.getElementById('spot');
+ if(fine&&!still){tilt.addEventListener('mousemove',e=>{const r=tilt.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+   tilt.style.transform=`rotateX(${(-y*16).toFixed(2)}deg) rotateY(${(x*16).toFixed(2)}deg)`;
+   spot.style.background=`radial-gradient(circle 240px at ${e.clientX-r.left}px ${e.clientY-r.top}px,rgba(255,255,255,.35),rgba(212,175,55,.18),transparent 80%)`});
+  tilt.addEventListener('mouseleave',()=>{tilt.style.transform=''})}
+ /* scroll stack + timeline + nav state */
+ const cards=[...document.querySelectorAll('.scard')];cards.forEach((c,i)=>{c.style.setProperty('--i',i);c.style.zIndex=i+1});
+ const nav=document.getElementById('nav'),route=document.getElementById('route'),fill=document.getElementById('fill'),stops=[...document.querySelectorAll('.stop')];
+ let ticking=false;
+ const update=()=>{ticking=false;const vh=innerHeight;nav.classList.toggle('scrolled',scrollY>40);
+  if(innerWidth>900&&!still){cards.forEach((c,i)=>{const nxt=cards[i+1];let s=1,b=0;if(nxt){const t=nxt.getBoundingClientRect().top,top=c.getBoundingClientRect().top,p=Math.min(Math.max(1-(t-top)/(vh*.6),0),1);s=1-p*(.12-i*.012);b=p*2}
+    c.style.transform=`scale(${s.toFixed(4)})`;c.firstElementChild.style.filter=b>.05?`brightness(${(1-b*.15).toFixed(3)})`:''})}
+  const r=route.getBoundingClientRect(),p=Math.min(Math.max((vh*.7-r.top)/(r.height),0),1);fill.style.height=(p*(r.height-16))+'px';
+  stops.forEach(s=>s.classList.toggle('lit',s.getBoundingClientRect().top<vh*.7))};
+ addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(update)}},{passive:true});addEventListener('resize',update);update();
+ /* dust particles in the spotlight */
+ const cv=document.getElementById('dust'),cx=cv.getContext('2d');let P=[];
+ const size=()=>{const d=Math.min(devicePixelRatio||1,2);cv.width=cv.clientWidth*d;cv.height=cv.clientHeight*d;cx.setTransform(d,0,0,d,0,0);P=Array.from({length:Math.round(cv.clientWidth/14)},()=>({x:Math.random()*cv.clientWidth,y:Math.random()*cv.clientHeight,r:Math.random()*1.4+.3,v:Math.random()*.25+.05,a:Math.random()*.5+.1}))};
+ const ro=new ResizeObserver(size);ro.observe(cv);size();
+ const dust=()=>{cx.clearRect(0,0,cv.clientWidth,cv.clientHeight);for(const p of P){p.y-=p.v;p.x+=Math.sin(p.y/40)*.15;if(p.y<0){p.y=cv.clientHeight;p.x=Math.random()*cv.clientWidth}
+   const fx=p.x/cv.clientWidth;cx.fillStyle=`rgba(240,220,180,${(p.a*Math.max(0,fx-.35)*1.5).toFixed(3)})`;cx.beginPath();cx.arc(p.x,p.y,p.r,0,6.283);cx.fill()}
+  if(!document.hidden)requestAnimationFrame(dust)};
+ if(!still)requestAnimationFrame(dust);
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!still)requestAnimationFrame(dust)});
+ /* lightbox */
+ const lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lc=document.getElementById('lbCap'),lp=document.getElementById('lbP'),ln=document.getElementById('lbN');let ge=0,gi=0;
  const show=()=>{const set=window.GAL[ge],p=set[gi];li.src=p.src;li.alt=p.cap;lc.textContent=p.cap+(set.length>1?'  ·  '+(gi+1)+' / '+set.length:'');lp.hidden=ln.hidden=set.length<2};
  document.querySelectorAll('.gopen').forEach(b=>b.addEventListener('click',()=>{ge=+b.dataset.ev;gi=0;show();try{lb.showModal()}catch(e){lb.setAttribute('open','')}}));
  const step=d=>{const n=window.GAL[ge].length;gi=(gi+d+n)%n;show()};
@@ -485,47 +633,6 @@ body{padding-top:0}
  document.getElementById('lbX').addEventListener('click',()=>lb.close());
  lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
  lb.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')step(-1);if(e.key==='ArrowRight')step(1)});
-
-
- /* ERTH-style motion: reveal on scroll, nav state, hero parallax */
- const still2=matchMedia('(prefers-reduced-motion: reduce)').matches;
- const navEl=document.querySelector('nav');
- const sel='.band h2,.band .label,.band .sub,.split>div>p,.stats>div,.cred,.career li,.filters,.pcard,.early li,.gcard,.trainbox,.pub,.card,.contact .box,.services li,.hero .intro>*';
- const groups=new Map();
- document.querySelectorAll(sel).forEach(el=>{el.classList.add('rv');const p=el.parentElement;const n=groups.get(p)||0;groups.set(p,n+1);el.style.setProperty('--d',Math.min(n,6)*0.08+'s')});
- const rvo=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rvo.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
- document.querySelectorAll('.rv').forEach(el=>rvo.observe(el));
- const fig=document.querySelector('.figure img');let tick=false;
- const onScroll=()=>{const y=scrollY;navEl.classList.toggle('scrolled',y>24);
-  if(!still2&&fig&&y<innerHeight*1.2){fig.style.transform='translateY('+(y*0.18).toFixed(1)+'px) scale('+(1+y*0.00008).toFixed(4)+')'}
-  tick=false};
- addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
-
- /* dotted green wave */
- const cv=document.getElementById('wave'),ctx=cv.getContext('2d');
- const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
- let t=0,raf;
- const draw=()=>{
-  const W=cv.clientWidth,H=cv.clientHeight,d=Math.min(devicePixelRatio||1,2);
-  if(cv.width!==W*d||cv.height!==H*d){cv.width=W*d;cv.height=H*d}
-  ctx.setTransform(d,0,0,d,0,0);ctx.clearRect(0,0,W,H);
-  const rows=14,step=W<600?9:7;
-  for(let r=0;r<rows;r++){
-   for(let x=0;x<=W;x+=step){
-    const u=x/W, side=Math.min(1,Math.abs(u-.5)*3.2); /* fade behind the figure */
-    if(side<.15)continue;
-    const y=H*.55+Math.sin(u*6.3+t+r*.22)*H*.12+Math.sin(u*2.1-t*.6)*H*.08+r*3.2-(1-side)*20;
-    const a=(.12+.5*(1-r/rows))*side*(.55+.45*Math.sin(u*9+r+t));
-    ctx.fillStyle='rgba(52,211,153,'+Math.max(0,a).toFixed(3)+')';
-    ctx.fillRect(x,y,1.6,1.6);
-   }
-  }
- };
- const loop=()=>{t+=.008;draw();raf=requestAnimationFrame(loop)};
- const ro=new ResizeObserver(draw);ro.observe(cv);
- if(!still)loop();else draw();
- document.addEventListener('visibilitychange',()=>{if(document.hidden)cancelAnimationFrame(raf);else if(!still)loop()});
-
 }
 </script>
 </body>
